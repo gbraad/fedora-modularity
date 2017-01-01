@@ -68,6 +68,10 @@ div.website-content {
   min-height: calc(100% - 260px);
 }
 
+div.content div.document {
+  min-height: 500px;
+}
+
 footer {
   height: 160px;
   background-color: #111;
