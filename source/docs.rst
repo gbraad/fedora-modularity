@@ -10,6 +10,17 @@ Contents:
 
 .. toctree::
     :maxdepth: 2
+    :caption: Architecture
+
+    architecture/infra-services-proposal
+    architecture/life-of-a-module-update
+    architecture/life-of-a-package-update
+    architecture/open-questions-and-notes
+    architecture/two-approaches-to-the-orchestrator
+
+
+.. toctree::
+    :maxdepth: 2
     :caption: First Section
 
     first-one
@@ -30,4 +41,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
