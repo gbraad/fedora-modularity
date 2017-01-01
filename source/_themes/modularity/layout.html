@@ -6,12 +6,12 @@
   <body>
     <div class="website-header">
       <div class="container">
-        <a href="/">
-          <img class="logo" src="/_static/logo.png">
+        <a href="{{ pathto('', 1) }}">
+          <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
         </a>
         <ul class="nav nav-pills pull-right main-menu">
-          <li role="presentation"><a href="/">Home</a></li>
-          <li role="presentation" class="active"><a href="/docs.html">Docs</a></li>
+          <li role="presentation"><a href="{{ pathto('', 1) }}">Home</a></li>
+          <li role="presentation" class="active"><a href="{{ pathto('docs.html', 1) }}">Docs</a></li>
         </ul>
       </div>
     </div>
@@ -31,8 +31,8 @@
           <div class="col-sm-9 content">
             <br>
             <ol class="breadcrumb">
-              <li><a href="/">Home</a></li>
-              <li><a href="/docs.html">Docs</a></li>
+              <li><a href="{{ pathto('', 1) }}">Home</a></li>
+              <li><a href="{{ pathto('docs.html', 1) }}">Docs</a></li>
               <li class="active">{{ title }}</li>
             </ol>
 

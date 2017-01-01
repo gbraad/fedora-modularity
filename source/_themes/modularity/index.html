@@ -6,12 +6,12 @@
   <body>
     <div class="website-header">
       <div class="container">
-        <a href="/">
-          <img class="logo" src="/_static/logo.png">
+        <a href="{{ pathto('', 1) }}">
+          <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
         </a>
         <ul class="nav nav-pills pull-right main-menu">
-          <li role="presentation" class="active"><a href="/">Home</a></li>
-          <li role="presentation"><a href="/docs.html">Docs</a></li>
+          <li role="presentation" class="active"><a href="{{ pathto('', 1) }}">Home</a></li>
+          <li role="presentation"><a href="{{ pathto('docs.html', 1) }}">Docs</a></li>
         </ul>
       </div>
     </div>
@@ -20,7 +20,7 @@
       <div class="container">
         <h1>Building a modular Linux OS</h1>
         <p>with multiple versions of components on different lifecycles.</p>
-        <p><a class="btn btn-primary btn-lg" href="/docs.html" role="button">Read the Docs</a></p>
+        <p><a class="btn btn-primary btn-lg" href="{{ pathto('docs.html', 1) }}" role="button">Read the Docs</a></p>
       </div>
     </div>
 
