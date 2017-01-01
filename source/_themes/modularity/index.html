@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.html" %}
+  </head>
+  <body>
+    <div class="website-header">
+      <div class="container">
+        <a href="/">
+          <img class="logo" src="/_static/logo.png">
+        </a>
+        <ul class="nav nav-pills pull-right main-menu">
+          <li role="presentation" class="active"><a href="/">Home</a></li>
+          <li role="presentation"><a href="/docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-home">
+      <div class="container">
+        <h1>Building a modular Linux OS</h1>
+        <p>with multiple versions of components on different lifecycles.</p>
+        <p><a class="btn btn-primary btn-lg" href="/docs.html" role="button">Read the Docs</a></p>
+      </div>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    {% include "footer.html" %}
+
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include "head.html" %}
+  </head>
+  <body>
+    <div class="website-header">
+      <div class="container">
+        <a href="/">
+          <img class="logo" src="/_static/logo.png">
+        </a>
+        <ul class="nav nav-pills pull-right main-menu">
+          <li role="presentation"><a href="/">Home</a></li>
+          <li role="presentation" class="active"><a href="/docs.html">Docs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="website-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 menu">
+            <br>
+            {% set toctree = toctree(maxdepth=2, collapse=True, includehidden=True) %}
+            {% if toctree %}
+                {{ toctree }}
+            {% else %}
+                {{ toc }}
+            {% endif %}
+          </div>
+          <div class="col-sm-9 content">
+            <br>
+            <ol class="breadcrumb">
+              <li><a href="/">Home</a></li>
+              <li><a href="/docs.html">Docs</a></li>
+              <li class="active">{{ title }}</li>
+            </ol>
+
+            {% block body %}{% endblock %}
+
+            <hr>
+
+            <div class="next-prev-btns">
+              {% if next %}
+                <a href="{{ next.link|e }}" class="btn btn-default pull-right">{{ _('Next') }} <span class="glyphicon glyphicon-chevron-right"></span></a>
+              {% else %}
+                <a href="" class="btn btn-default pull-right disabled"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+              {% endif %}
+              {% if prev %}
+                <a href="{{ prev.link|e }}" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> {{ _('Previous') }}</a>
+              {% else %}
+                <a href="" class="btn btn-default disabled"><span class="glyphicon glyphicon-chevron-left"></span> {{ _('Previous') }}</a>
+              {% endif %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      {% include "footer.html" %}
+    </footer>
+  </body>
+</html>
