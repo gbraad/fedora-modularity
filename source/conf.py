@@ -49,8 +49,8 @@ source_suffix = '.rst'
 master_doc = 'docs'
 
 # General information about the project.
-project = 'Test1'
-copyright = '2017, Adam Samalik'
+project = 'Fedora Modularity'
+copyright = '2017, Red Hat, Inc. and others, content licensed under: https://creativecommons.org/licenses/by-sa/3.0/.'
 author = 'Adam Samalik'
 
 # The version info for the project you're documenting, acts as replacement for

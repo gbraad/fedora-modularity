@@ -25,7 +25,7 @@
     </div>
 
     <div>
-      <div class="container" style="padding: 20px 0">
+      <div class="container" style="padding: 20px 15px">
         <h2>Some cool value proposition!</h2>
         <p>so people know how amazing this project is. We can mention something specific and then link to the docs!</p>
         <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Learn More</a></p>
@@ -33,13 +33,13 @@
     </div>
 
     <div style="background-color: black; height: 400px;">
-      <div class="container" style="padding: 100px 0">
+      <div class="container" style="padding: 100px 15px">
         <h2 class="text-center" style="color: #777">What about a video?</h2>
       </div>
     </div>
 
     <div>
-      <div class="container" style="padding: 20px 0">
+      <div class="container" style="padding: 20px 15px">
         <h2>Some other useful info!</h2>
         <p>so people know how amazing this project is. We can mention something specific and then link to the docs!</p>
         <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Try it yourself!</a></p>
@@ -47,17 +47,18 @@
     </div>
 
     <div style="background-color: #eee">
-      <div class="container" style="padding: 20px 0">
+      <div class="container" style="padding: 20px 15px">
         <h2>Join us!</h2>
         <p>link to a very simple onboarding documentation should be a part of this block.</p>
         <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Join us!</a></p>
       </div>
     </div>
 
-
-    {% block body %}{% endblock %}
-
-    {% include "footer.html" %}
+    <footer>
+      <div class="container">
+      {% include "footer.html" %}
+      </div>
+    </footer>
 
   </body>
 </html>
