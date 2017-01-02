@@ -38,14 +38,23 @@ div.website-header ul.main-menu {
 
 div.website-header ul.main-menu li a {
   color: white;
+  border-radius: 0;
+  padding: 4px;
+  margin: 8px;
+}
+
+div.website-header ul.main-menu li a:hover {
+  color: white;
+  background: transparent;
+  border-bottom: 3px solid #bbb;
+
 }
 
 div.website-header ul.main-menu li.active a {
   color: white;
-  background-color: #0a57a4;
+  background: transparent;
+  border-bottom: 3px solid white;
 }
-
-
 
 div.jumbotron-home {
   background-color: #072b61;
@@ -64,7 +73,7 @@ div.jumbotron-home p {
 
 
 div.website-content {
-  background-color: #222;
+  background-color: #2a2a2a;
   min-height: calc(100% - 260px);
 }
 
@@ -79,7 +88,7 @@ footer {
 
 
 div.website-content div.menu {
-  background-color: #222;
+  background-color: #2a2a2a;
   padding: 0;
 }
 
@@ -95,7 +104,7 @@ div.website-content div.menu ul li.current {
 div.website-content div.menu ul li a {
   color: #ddd;
   display: block;
-  padding: 8px;
+  padding: 8px 24px;
 }
 
 div.website-content div.menu ul li a:hover {
@@ -120,7 +129,7 @@ div.website-content div.menu p.caption{
   color: #777;
   text-transform: uppercase;
   font-weight: bold;
-  padding-left: 8px;
+  padding-left: 24px;
 }
 
 

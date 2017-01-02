@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="website-header">
-      <div class="container">
+      <div class="container-fluid">
         <a href="{{ pathto('', 1) }}">
           <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
         </a>
@@ -17,9 +17,9 @@
     </div>
 
     <div class="website-content">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 menu">
+          <div class="col-md-3 menu">
             <br>
             {% set toctree = toctree(maxdepth=2, collapse=True, includehidden=True) %}
             {% if toctree %}
@@ -28,7 +28,7 @@
                 {{ toc }}
             {% endif %}
           </div>
-          <div class="col-sm-9 content">
+          <div class="col-md-9 content">
             <br>
             <ol class="breadcrumb">
               <li><a href="{{ pathto('', 1) }}">Home</a></li>
