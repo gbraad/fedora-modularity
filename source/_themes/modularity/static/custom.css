@@ -59,6 +59,7 @@ div.website-header ul.main-menu li.active a {
 div.jumbotron-home {
   background-color: #072b61;
   color: white;
+  margin-bottom: 0;
 }
 
 div.jumbotron-home h1 {
