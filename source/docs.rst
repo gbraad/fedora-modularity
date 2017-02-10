@@ -21,6 +21,15 @@ Contents:
     architecture/constructing
     architecture/versioning
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Development
+
+    development/integration
+    development/development
+    development/prototype
+
+
 
 .. toctree::
     :maxdepth: 2
