@@ -1,4 +1,7 @@
-Changes to PDC database structures
+Changes to PDC
 =========
 
-Lorem ipsum dolor sit amet
+.. toctree::
+    :maxdepth: 1
+
+    pdc-changes/database
