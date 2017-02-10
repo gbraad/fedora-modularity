@@ -26,6 +26,7 @@ Contents:
     :maxdepth: 2
     :caption: Development
 
+    development/getting-started
     development/integration
     development/development
     development/prototype
