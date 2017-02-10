@@ -15,11 +15,11 @@ Contents:
     :maxdepth: 2
     :caption: Architecture
 
-    architecture/infrastructure
-    architecture/pdc-changes
     architecture/building-naming
     architecture/constructing
     architecture/versioning
+    architecture/infrastructure
+    architecture/pdc-changes
 
 
 .. toctree::
@@ -27,8 +27,8 @@ Contents:
     :caption: Development
 
     development/getting-started
+    development/building-modules
     development/integration
-    development/development
     development/prototype
 
 
