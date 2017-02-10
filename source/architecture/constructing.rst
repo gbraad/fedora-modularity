@@ -1,4 +1,9 @@
 Constructing a modular distribution
 =========
 
-abcd
+.. toctree::
+    :maxdepth: 1
+
+    constructing/breaking-down
+    constructing/compose-distribution
+    constructing/back-together
