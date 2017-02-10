@@ -21,6 +21,7 @@ Contents:
     architecture/constructing
     architecture/versioning
 
+
 .. toctree::
     :maxdepth: 2
     :caption: Development
@@ -30,12 +31,18 @@ Contents:
     development/prototype
 
 
+.. toctree::
+    :maxdepth: 1
+    :caption: Usability
+
+    usability/user-stories
+
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Local Development
+    :maxdepth: 1
+    :caption: Misc
 
-    developing-and-building-modules
+    misc/faq
 
 
 
