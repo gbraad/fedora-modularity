@@ -18,6 +18,13 @@ div.jumbotron-home {
   font-family: 'Alte Haas Grotesk'!important;
 }
 
+.rubric {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.1
+}
+
 html, body {
   height: 100%;
 }
@@ -108,7 +115,7 @@ div.website-content div.menu ul {
 }
 
 div.website-content div.menu ul li.current {
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 div.website-content div.menu ul li a {
@@ -132,7 +139,12 @@ div.website-content div.menu li ul {
 }
 
 div.website-content div.menu ul li.current li a {
-  background-color: #eee;
+  background-color: #ddd;
+}
+
+.toctree-l2.current a {
+  background-color: white!important;
+  color: red;
 }
 
 div.website-content div.menu p.caption{
@@ -173,6 +185,8 @@ a.btn-primary:hover {
   background-color: #072b61;
   border-color: #072b61;
 }
+
+
 
 
 /* Source: http://stackoverflow.com/questions/21591107/sphinx-inline-code-highlight */

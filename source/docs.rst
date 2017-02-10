@@ -8,30 +8,25 @@ Documentation Index
 
 Contents:
 
+
+
+
 .. toctree::
     :maxdepth: 2
     :caption: Architecture
 
-    architecture/infra-services-proposal
-    architecture/life-of-a-module-update
-    architecture/life-of-a-package-update
-    architecture/open-questions-and-notes
-    architecture/two-approaches-to-the-orchestrator
+    architecture/infrastructure
+    architecture/pdc-changes
+    architecture/building-naming
+    architecture/constructing
+    architecture/versioning
 
 
 .. toctree::
     :maxdepth: 2
-    :caption: First Section
+    :caption: Local Development
 
-    first-one
-    first-two
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Second Section
-
-    second-one
-    second-two
+    developing-and-building-modules
 
 
 
