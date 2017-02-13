@@ -1,6 +1,9 @@
 Module versioning and branching
 =========
 
+
+.. rubric:: TOC
+
 .. toctree::
     :maxdepth: 1
 

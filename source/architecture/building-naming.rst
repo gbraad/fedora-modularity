@@ -34,6 +34,7 @@ We will also distinguish between:
    packages into an organised module, but which includes no compilation
    step itself.
 
+.. rubric:: TOC
 
 .. toctree::
     :maxdepth: 1

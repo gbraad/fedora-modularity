@@ -1,6 +1,9 @@
 Changes to PDC
 =========
 
+
+.. rubric:: TOC
+
 .. toctree::
     :maxdepth: 1
 

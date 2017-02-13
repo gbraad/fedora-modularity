@@ -13,7 +13,7 @@ We know from the originally nebulous discussions that led to the formation of a 
 
 Towards accomplishing the second goal, we set out to study existing workflows and hypothesize what non-automated modularity workflows would entail.
 
-.. rubric:: Infrastructure TOC
+.. rubric:: TOC
 
 .. toctree::
     :maxdepth: 1
