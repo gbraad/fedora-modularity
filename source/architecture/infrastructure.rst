@@ -18,8 +18,8 @@ Towards accomplishing the second goal, we set out to study existing workflows an
 .. toctree::
     :maxdepth: 1
 
-    infrastructure/infra-services-proposal
-    infrastructure/life-of-a-module-update
     infrastructure/life-of-a-package-update
-    infrastructure/open-questions-and-notes
+    infrastructure/life-of-a-module-update
+    infrastructure/infra-services-proposal
     infrastructure/two-approaches-to-the-orchestrator
+    infrastructure/open-questions-and-notes
