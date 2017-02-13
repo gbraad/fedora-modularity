@@ -1,6 +1,8 @@
 The Prototype
 ==================================
 
+.. rubric:: TOC
+
 .. toctree::
     :maxdepth: 1
 

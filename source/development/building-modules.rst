@@ -1,6 +1,8 @@
 Building Modules
 =================
 
+.. rubric:: TOC
+
 .. toctree::
     :maxdepth: 1
 
