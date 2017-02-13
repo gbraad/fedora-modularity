@@ -7,3 +7,4 @@ Getting Started
     :maxdepth: 1
 
     getting-started/get-involved
+    getting-started/faq
