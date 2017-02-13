@@ -24,33 +24,97 @@
       </div>
     </div>
 
-    <div>
-      <div class="container" style="padding: 20px 15px">
-        <h2>Some cool value proposition!</h2>
-        <p>so people know how amazing this project is. We can mention something specific and then link to the docs!</p>
-        <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Learn More</a></p>
+    <div class="small-jumbotron small-jumbdotron-white">
+      <div class="container">
+        <h2> When you want a rolling release. But not really. </h2>
+
+        <p>  How to get a <strong>cutting-edge runtime for my CI/CD front-end</strong> together with a <strong>stable database</strong>? </p>
+
+        <div class="row text-center">
+          <div class="col-md-3 col-sm-6">
+            <div class="viz-distro">
+              <h3> Rolling Release </h3>
+              <div class="viz-component viz-component-new">
+                new app runtime
+              </div>
+              <div class="viz-component viz-component-old">
+                unstable database
+              </div>
+              <div class="viz-component viz-component-new">
+                new kernel
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="viz-distro">
+              <h3> LTS </h3>
+              <div class="viz-component viz-component-old">
+                old app runtime
+              </div>
+              <div class="viz-component viz-component-new">
+                stable database
+              </div>
+              <div class="viz-component viz-component-old">
+                old kernel
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="viz-distro">
+              <h3> Modularity </h3>
+              <div class="row">
+                <div class="col-xs-6" style="padding-right:0">
+                  <div class="viz-component viz-component-module">
+                    new app runtime
+                  </div>
+                </div>
+                <div class="col-xs-6" style="padding-left:0">
+                  <div class="viz-component viz-component-module">
+                    stable database
+                  </div>
+                </div>
+              </div>
+              <div class="viz-component viz-component-new">
+                new kernel
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p> Modularity separates the HW part (<strong>Base Runtime</strong>) of the application part (<strong>Modules</strong>). Different modules can have different goals like new features, stability, or security. It's up to you to choose the right ones. </p>
       </div>
     </div>
 
-    <div style="background-color: black; height: 400px;">
-      <div class="container" style="padding: 100px 15px">
-        <h2 class="text-center" style="color: #777">What about a video?</h2>
+
+    <div class="small-jumbotron small-jumbotron-black">
+      <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xNLhcYEMgO0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
 
-    <div>
-      <div class="container" style="padding: 20px 15px">
-        <h2>Some other useful info!</h2>
-        <p>so people know how amazing this project is. We can mention something specific and then link to the docs!</p>
-        <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Try it yourself!</a></p>
+    <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2>About Modularity</h2>
+        <p>Modularity (formerly, Modularization) is an ongoing initiative in Fedora to resolve the issue of divergent, occasionally conflicting lifecycles of different components. A module provides functionality (for instance a web server) and includes well-integrated and -tested components (for instance Apache httpd and the libraries on which it depends). Modules can be deployed into production in various ways, for instance as "classic" RPM packages or a container image, and is updated as a whole. Different modules can emphasize new features, stability, security, etc. differently.</p>
+        <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Learn about the project</a></p>
       </div>
     </div>
 
-    <div style="background-color: #eee">
-      <div class="container" style="padding: 20px 15px">
-        <h2>Join us!</h2>
-        <p>link to a very simple onboarding documentation should be a part of this block.</p>
-        <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Join us!</a></p>
+    <div class="small-jumbotron small-jumbotron-shadow">
+      <div class="container">
+        <h2>Follow our progress</h2>
+        <p>We post regular updates to our <a href="https://www.youtube.com/channel/UC4O8G9SZwqtkIAuKcT8-JpQ">Fedora Modularity YouTube Channel</a>.</p>
+        <p><a class="btn btn-primary" href="https://www.youtube.com/channel/UC4O8G9SZwqtkIAuKcT8-JpQ" role="button">Watch our videos</a></p>
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2>Get in touch!</h2>
+        <p>Come to our regular meeting, ask us on the mailing list, or discuss on our IRC channel. </p>
+        <p><a class="btn btn-primary" href="{{ pathto('docs.html', 1) }}" role="button">Modularity Working Group wiki page</a></p>
       </div>
     </div>
 
