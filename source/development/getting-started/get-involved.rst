@@ -86,7 +86,7 @@ Technical details
 Architecture
 ~~~~~~~~~~~~
 
-Refer to `Modularity/Infra <Modularity/Infra>`__.
+Refer to :doc:`/architecture/infrastructure`
 
 Code repositories
 ~~~~~~~~~~~~~~~~~
@@ -100,6 +100,6 @@ typically start with the *fm-* prefix and are open to all members of the
 Services and tools
 ~~~~~~~~~~~~~~~~~~
 
-Refer to `Modularity/Developer\_Notes <Modularity/Developer_Notes>`__.
+Refer to :doc:`../prototype/developer-notes`
 
 Category:Modularity Category:Modularization

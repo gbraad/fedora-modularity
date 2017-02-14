@@ -1,7 +1,7 @@
 Grooming Your Changes
 =====================
 
-Apart from `writing nice code <Modularity/Development/Coding_Style>`__,
+Apart from :doc:`coding-style`,
 there are some things that you should keep in mind regarding the changes
 you submit. Normally you'd develop your changes in a private branch on
 your fork of a repository and, when you're done, submit them as pull

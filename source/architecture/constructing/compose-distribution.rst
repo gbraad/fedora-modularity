@@ -60,8 +60,7 @@ the module compose, even if the compose is actually triggered manually.
 
 A module compose is now simply the creation of a yum repository of the
 required packages or subpackages, with the addition of a small amount of
-module metadata as described in `Building modular
-things <Modularity/Getting_started/Building_modular_things>`__.
+module metadata as described in :doc:`../building-naming`.
 
 .. figure:: constructing-image3.png
    :alt: constructing-image3.png

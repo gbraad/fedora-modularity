@@ -2,7 +2,7 @@ Constructing a modular distribution
 =========
 
 The fundamental objective of the
-`Modularity <https://fedoraproject.org/wiki/Modularity>`__ effort is to
+Modularity effort is to
 break up the monolithic concept of a “distribution release” or
 traditional Compose into something more fine-grained. We should be able
 to release applications or stacks such as LAMP or ruby-on-rails on a

@@ -35,6 +35,4 @@ Modularity. New relations are from the ``UnreleasedVariant`` to
 See Also
 --------
 
--  `Modularity/Architecture/Infra <Modularity/Architecture/Infra>`__
-
-Category:Modularity
+:doc:`../infrastructure`

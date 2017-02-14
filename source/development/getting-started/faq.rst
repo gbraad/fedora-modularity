@@ -155,8 +155,6 @@ not to miss the blog: https://communityblog.fedoraproject.org/
 -  Blog posts tagged with “Modularity”
    https://communityblog.fedoraproject.org/tag/modularity/
 
--  `Infra <Modularity/Infra>`__ segment of the wiki
+-  :doc:`/architecture/infrastructure`
 
--  `Developer Notes <Modularity/Developer_Notes>`__ segment of the wiki
-
-Category:Modularity Category:Modularization
+-  Refer to :doc:`../prototype/developer-notes`
