@@ -6,5 +6,10 @@ Building Modules
 .. toctree::
     :maxdepth: 1
 
-    building-modules/local
-    building-modules/infra
+
+    building-modules/developing
+    building-modules/building-local
+    building-modules/containers-local
+    building-modules/adding-modules-to-fedora
+    building-modules/building-infra
+    building-modules/containers-infra
