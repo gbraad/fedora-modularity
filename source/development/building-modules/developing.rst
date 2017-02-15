@@ -1,7 +1,7 @@
 Defining modules in modulemd
 ============================
 
-To have your module build, you need to start with writing a modulemd file which is a definition of your module including the components, API, and all the information necessary to build your module like specifying the build root and a build order for the packages. Let’s have a look at an example Vim module:
+To have your module build, you need to start with writing a `modulemd <https://pagure.io/modulemd>`__ file which is a definition of your module including the components, API, and all the information necessary to build your module like specifying the build root and a build order for the packages. Let’s have a look at an example Vim module:
 
 ::
 
