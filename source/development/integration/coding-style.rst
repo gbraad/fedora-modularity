@@ -62,7 +62,7 @@ Python comes in two major versions nowadays:
 Version 3 is not backwards compatible to version 2. While we mainly
 target "the future", there are some components we have to work with that
 haven't yet been ported over the Python 3, most notably
-```koji`` <https://fedorahosted.org/koji/>`__. Additionally, we may also
+`koji <https://fedorahosted.org/koji/>`__. Additionally, we may also
 want to support the "user tools" we create on legacy systems, so we
 can't write code that uses all the latest features. Fortunately, many of
 the original Python 3 features have been back-ported to Python 2.7, so
