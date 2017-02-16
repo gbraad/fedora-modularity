@@ -530,4 +530,3 @@ Complete module definition
 See `the modulemd
 specification <https://pagure.io/modulemd/blob/master/f/spec.yaml>`__.
 
-Category:Modularity Category:Modularization

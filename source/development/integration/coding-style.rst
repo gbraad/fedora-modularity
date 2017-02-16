@@ -501,4 +501,3 @@ External links
    lists <https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
    for docstrings
 
-Category:Modularity

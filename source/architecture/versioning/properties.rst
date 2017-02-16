@@ -9,9 +9,8 @@ introducing an incompatible ABI would normally be expected to require a
 new version branch.
 
 But this is ultimately a policy decision: there is nothing technical to
-stop ABI breakage within a version stream. For example, the current
-RHEL-7 extras stream may break compatibility from time to time, and has
-done so in the past in certain container platform packages. Our tools
+stop ABI breakage within a version stream. For example, the container-runtime
+is rapidly changing so it has broken compatibility across versions. Our tools
 should be able to detect incompatible ABI changes as far as possible,
 but should not prevent them if we have an exceptional case where such a
 change is desired.
@@ -37,6 +36,9 @@ Defining the external ABI as a set of packages will allow us to:
 -  Verify that layered modules or applications depend only on packages
    defined as external ABI, by checking rpm dependency chains
 
+Over time, we may find other ways to describe the external ABI of a module
+but, at present, RPMs are the best stand in.
+
 **Lifecycle:** Given that we define no formal policy on ABI
 lifecycle—rather leaving this up to policy—it follows that there is no
 strong requirement that version numbers of packages within a single
@@ -45,13 +47,13 @@ rebase a package within an update stream, even adding new features, as
 long as any claimed backwards compatibility is preserved.
 
 We do need to be concerned about whether 3rd-party application
-certification is expected to be preserved when such an application
+"certification" is expected to be preserved when such an application
 depends on a module’s version branch containing rebased packages. This
 is an important question, and we need to add tooling and policy around
 it; but for now this is primarily a policy question, and beyond the
 scope of this document. Different modules may have different appetite
 for risk and rebases, and hence have different policy around
-certification.
+"certification."
 
 **Parallel Availability:** The update streams for different module
 version branches must be able to coexist in our pipeline and released
@@ -66,6 +68,7 @@ automatically update it to 2.4. Any dependencies brought in by either
 must also prevent such interference.
 
 And yet if a certain package *does* support parallel installation of
-different version branches at the same time (eg. RHSCLs), then the
+different version branches at the same time 
+(eg. software collection-based packages), then the
 separate installed versions at any time must each be updatable by their
 own specific update stream.

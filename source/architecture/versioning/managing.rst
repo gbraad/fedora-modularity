@@ -1,8 +1,8 @@
 Managing this branching complexity
 ==================================
 
-Given that the exact and branching policy for a module is currently
-inconsistent between products, needs to remain flexible, and changes
+Given that the exact branching policy for a module is currently
+inconsistent, needs to remain flexible, and changes
 over time, how do we manage this? The question is especially significant
 given that we are looking at significant changes to the way we divide
 and release the distribution in the future; our future branching model
@@ -33,7 +33,7 @@ branching.
 
 Changes in branching also need to be orchestrated: we should not define
 a new branch and allow a developer to start building on that branch,
-before the branch has been created in bugzilla, dist-git, brew etc.
+before the branch has been created in bugzilla, dist-git, koji etc.
 There are many tools that could be used here: ansible is just one such
 tool. The point here is to identify that as a separate concern.
 Automation here is important if we want to be able to support
@@ -54,7 +54,7 @@ Forking a new branch
 We have mentioned that creating a new branch for a module involves
 branching multiple different tools: we need a branch for the module in
 dist-git, new branches for its components, and corresponding branches in
-bugzilla; we may need new tags in brew.
+bugzilla; we may need new tags in koji.
 
 This implies that the branching for a module is (usually) the same thing
 as the branching for all the component packages of that module.
@@ -65,16 +65,16 @@ and which otherwise inherits the content (''including new content)
 ''from its base branch.
 
 There are many examples which would suit such a **inheriting branch.**
-The RHEL f-stream model which allows early access to new features prior
-to a minor update, is an example. Another might be the RHOSP version of
+The f-stream model which allows early access to new features prior
+to an update, is an example. Another might be the specialized version of
 the virtualisation stack, which contains a version of kvm-qemu with
-newer features but which otherwise follows base RHEL. The model also
+newer features but which otherwise follows Fedora. The model also
 works for scratch or staging branches, where we can build and test
 updates to an existing branch as needed to suit internal developer
 needs.
 
-This suggests that we want to include tooling support for such an
-inheriting branch. Technically, this might involve creating new branches
+This suggests that we want to include tooling support for inheriting such a
+ branch. Technically, this might involve creating new branches
 for only a subset of the packages of a module; and recording the base
 module from which we pull other packages during a module compose.
 
@@ -82,20 +82,19 @@ Converging branches
 ~~~~~~~~~~~~~~~~~~~
 
 Just as important as forking a new branch is converging existing
-branches. In the RHEL f-stream model, we allow a product early
-back-ported access to a new feature scheduled for the next RHEL minor
-release. The f-stream is the early-access branch; the intent is that
-when the next minor RHEL release occurs, it introduces that back-ported
-feature into the mainline RHEL stream, and the f-stream is no longer
-needed: any product depending on that feature moves back off the
+branches. In an f-stream model, a new feature scheduled for the next release 
+is made available in a prior release. The f-stream is the early-access branch; 
+the intent is that when the next release occurs, it introduces that 
+feature into the mainline stream, and the f-stream is no longer
+needed: any component depending on that feature moves back off the
 f-stream branch and onto the mainline.
 
-Extending this to a modular build, we can imagine a layered product
+Extending this to a modular build, we can imagine a component
 needing a new feature within any module in our stack. If that module
 does not plan the feature to be released in time, we can fork a specific
-version of the module to serve the needs of the one product needing the
+version of the module to serve the needs of the one component needing the
 new feature; but if and when that feature is released in some mainline
-version of the module, we want the ability to move the layered product
+version of the module, we want the ability to move the component
 off the forked feature branch and back onto mainline.
 
 There are likely to be many complexities here; the important point is to
@@ -110,11 +109,6 @@ Modules can depend in turn on other modules. We have defined a “stack”
 as the entire tree of modules needed to satisfy dependencies for one
 top-level module or application. But as we combine modules in this way,
 not all those modules will have the same branches or lifecycle.
-
-We already deal with this today in most of our layered products, which
-need to be built for a specific RHEL release, but which are not released
-on the RHEL schedule. Even parts of the wider RHEL product are like
-this: software collections have their own release schedule, for example.
 
 So when we have multiple, different, unsynchronised branching models for
 different modules within a stack, how do we know exactly which branches

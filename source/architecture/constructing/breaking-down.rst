@@ -2,7 +2,7 @@ Breaking down the monolithic release
 ====================================
 
 We have many steps in the release pipeline today: starting with bugzilla
-and dist-git; building and tagging in brew; the errata tool and CDN for
+and dist-git; building and tagging in brew; the errata tool and mirrors for
 pushing the bits out.
 
 But currently it all comes together in The Compose.
@@ -12,7 +12,7 @@ particular document. So let’s start with the assumption that we’ve
 already built our individual packages, and that (for now) we have a flat
 namespace of binary rpms already built from all our components. That
 namespace could be living in a yum repository like the rawhide repo, or
-a brew/koji tag such as fedora-24.0-candidate.
+a koji tag such as fedora-24.0-candidate.
 
 .. figure:: constructing-image1.png
    :alt: constructing-image1.png
@@ -33,11 +33,6 @@ But it now falls short on multiple fronts:
    cloud targets such as qcow images and AMIs; and docker base and
    layered images. We have additional, often ad-hoc,
    incompletely-automated builds to create this additional content.
--  The compose process does not represent all of our releases. An
-   obvious example is the batched update errata delivery in Fedora 24,
-   where we attempt to synchronise atomic and Fedora errata into a
-   single predictable consolidated errata release. Yet the release
-   tooling has no formal knowledge of that release.
 -  The modularity effort is explicitly trying to get away from the
    concept of a single monolithic distribution, and to release modular
    parts of the distribution on independent release cycles.

@@ -1,7 +1,7 @@
 Constraints on branching
 ========================
 
-The above seems to say “branching is hard, let’s not assume what it
+Everything so far seems to say “branching is hard, let’s not assume what it
 looks like but just store a flexible representation that we can adapt as
 we need.”
 
@@ -14,18 +14,13 @@ policy.
 Splitting a binary package build over multiple modules
 ------------------------------------------------------
 
-This is something that is surprisingly common in RHEL. It happens
-typically because we do not want to give the same level of support to
-all sub-packages from a single upstream source.
+This is something that is surprisingly common. 
 
-Examples might be when we want to include a library to support our own
-applications, but do not want to give it full support for end-users; we
-might include the library itself in RHEL, but split out the ability to
-develop against it (the include files, static libraries etc. that
-typically land in a -devel binary rpm) into, say, Optional. Or we might
-want to reserve certain functionality for specific products: eg.
-providing only guest hardware devices in cloud images, without offering
-hardware enablement with the full complement of kernel hardware drivers.
+Examples might be when we want to include a library to support our own 
+package/application, but do not want to give it full support for end-users; we
+might include the library itself, but not include the components 
+that provide the ability to develop against it (the include files, static libraries etc. that
+typically land in a -devel binary rpm). 
 
 Can we do this naturally in a modular build chain? Clearly it breaks any
 assumption that a module can be both compiled and composed in complete
@@ -35,7 +30,7 @@ We need to determine how important it is to support this.
 
 But it is still quite possible to achieve, if the modules which are to
 share binaries have matching branches. In that case, module composes can
-always agree on which brew/koji branches [tags] to consume packages
+always agree on which koji branches [tags] to consume packages
 from. So this may be fairly easy for modules which are part of a single
 consolidated release, as defined above; it would be fair to restrict
 this possibility to that case.
@@ -53,10 +48,10 @@ The idea of a single coherent branching structure from git to release is
 broken if we have multiple output branches from a single input branch.
 
 But the entire point of ABI forwards compatibility is to avoid the need
-to do this: to run a module on a set of major runtimes, it should in
-theory be necessarily simply to build it on the oldest runtime in that
-set. A module built on RHEL-6 should run on RHEL-7 or -8, as long as it
-is using only dependencies with tier-1 API stability guarantees.
+to do this: to run a module on a set of major runtimes, it should, in
+theory, be necessary simply to build it on the oldest runtime in that
+set. A module built on F25 should run on F26 or f27, as long as it
+is using only dependencies with long-term stability guarantees.
 
 So before working through the complexities of commit-once,
 compile-multiple-times, it will be important to determine to what extent

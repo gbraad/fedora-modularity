@@ -172,4 +172,3 @@ See also
       rebasing, and other advanced ways of screwing up your repository
       ;)
 
-Category:Modularity

@@ -7,9 +7,8 @@ smaller modules designed to be assembled in different combinations.
 
 Closely related is a second core principle: we should be able to release
 new major versions of these modules on their own schedules to serve
-product requirements; they should not all be tied to the master cadence
-of today’s major release cycles. We already do this to some extent with
-Extras and SCLs within Fedora.
+a component's requirements; they should not all be tied to the master cadence
+of today’s major release cycles.
 
 So, at a deep level, Modularity requires us to branch and version
 modules independently of each other.
@@ -18,15 +17,15 @@ Yet we need to control this complexity: the engineering involved has to
 be sustainable, and the combinations we offer to the user need to be
 manageable. This is especially true as different tools represent
 branches in different ways (eg. bugzilla represents branches as the
-“version” field for a product, and also has version-specific flags such
-as the 7.1.z=? flags; brew has brew tags which acts as branches, etc.)
+“version” field for a product, and also has version-specific flags; 
+koji has koji tags which act as branches, etc.)
 
 This leads to some complex constraints, which we will explore in this
 document.
 
 Ultimately, we can identify many distinct variants on branching:
 sometimes different parts of the release pipeline end up with multiple
-different views of the underlying branches. Just consider Fedora 24.y
+different views of the underlying branches. Just consider Fedora fXX
 branches: these either look like a continuous update stream to the end
 user, or *some* of the branches end up having distinct lifespans.
 
@@ -38,13 +37,13 @@ branching involving:
 -  A centralised representation of the current branching at any point in
    time;
 -  Retain separate branch definitions in our various tools such as
-   bugzilla, brew, errata-tool etc, as we have today;
+   bugzilla, koji, bodhi, etc, as we have today;
 -  A flexible scripting approach to automating creation of new branches
    and key transitions on existing branches (dev to beta to release
    etc), to keep branches on the different tools synchronised.
 
-This splits *mechanism*—the central branching repository and the branch
-definitions in the different tools—from *policy*—the specific branches
+This splits *mechanism* — the central branching repository and the branch
+definitions in the different tools — from *policy* — the specific branches
 and transitions actioned by the scripts.
 
 It is important to remember that the mechanism needs to be flexible

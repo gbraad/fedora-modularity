@@ -3,7 +3,7 @@ The Module
 
 We group these binary packages into *modules*. Note, we can pick just a
 subset of the subpackages from a particular build into a given module,
-eg. some hypothetical example base runtime module:
+eg. a hypothetical example base runtime module:
 
 .. figure:: building-image2.png
    :alt: building-image2.png
@@ -14,7 +14,7 @@ additional metadata and semantics that allow them to play nicely with
 other modules and module tooling.
 
 We attach metadata to these modules, on top of the normal metadata in a
-repository. That can be support metadata (SLAs or EOL dates for the
+repository. Metadata may include: support metadata (SLAs or EOL dates for the
 module); metadata on how to use the module (eg. its dependencies,
 default installed packages); identity (builder, vendor, version etc), or
 many other things that we’re still just starting to imagine.
@@ -34,7 +34,7 @@ Compose” of a full distribution release. The two are similar, in that
 they both assemble existing compiled packages into bundled output; but
 the module compose is just one single targeted assembly, whereas the
 full distribution Compose typically creates multiple repositories and
-images as output in a single large job. Also note that we can in theory
-perform the build of the packages within a module, and the compose of
+images as output in a single large job. Also note that we can, in theory,
+perform the build (compilation) of the packages within a module, and the compose of
 the module itself, as a single step; we might term this a **module
 build.**

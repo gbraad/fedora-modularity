@@ -16,11 +16,9 @@ straight, we need to distinguish between:
     A version branch **may** correspond to a new **major version** of
     the module, but there may be exceptions: for example, when we add
     specific features as a side-branch of an existing major version. The
-    new branch may differ by SLA (eg. EUS branches off an existing RHEL
-    version branch) or by feature (eg. the RHEV-H / RHOSP version of the
-    RHEL virt stack, or an “f-stream” branch giving early access to a
-    specific new feature planned to be released in a subsequent update
-    to RHEL.
+    new branch may differ by SLA (eg. a faster moving Python) or by 
+    feature (eg. an “f-stream” branch giving early access to a
+    specific new feature planned to be released in a subsequent update).
 
     Users must opt into a new version branch. By definition here,
     creating a new version branch **must** have no impact on users who
