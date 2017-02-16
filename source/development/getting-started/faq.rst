@@ -5,7 +5,7 @@ How is this related to `Environment Modules <Packaging:EnvironmentModules>`__?
 ------------------------------------------------------------------------------
 
 Environment Modules are a concept unrelated to the Modularity
-initiative.
+initiative. However, they are a different attempt to solve a similar issue.
 
 What is the concept of a module?
 --------------------------------
@@ -74,7 +74,7 @@ OK, so what is modularity?
 --------------------------
 
 Modularity is an ongoing initiative in Fedora to resolve the issue of
-divergent, occasionally conflicting lifecycles of different components
+divergent, occasionally conflicting, lifecycles of different components
 (modules).
 
 What is a module’s lifecycle?
@@ -103,8 +103,7 @@ What are a module’s standard properties?
    because the API is king, not the binaries inside. However, while we
    need to consider the API model, full support of this may not be
    necessary for the
-   `https://en.wikipedia.org/wiki/Minimum\_viable\_product
-   MVP <https://en.wikipedia.org/wiki/Minimum_viable_product_MVP>`__.
+   `MVP <https://en.wikipedia.org/wiki/Minimum_viable_product>`__.
 -  A module comes with associated metadata such as lifecycle information
    (when does the module go end of life), who maintains it and to what
    support level, etc.

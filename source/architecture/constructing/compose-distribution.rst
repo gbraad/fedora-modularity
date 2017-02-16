@@ -9,7 +9,7 @@ have a library in a base module but have its -devel subpackage in a
 developer-only module, for example.) This ignores the branching of
 packages and modules, but as stated before, that’s a separate topic.
 
-Note: '''The module boundaries here are just examples. '''They are
+Note: `The module boundaries here are just examples.` They are
 illustrations to show how we can break the monolithic distribution up.
 They are *not* proposals that we should draw the lines between modules
 in any particular places: that is an entirely separate discussion.
@@ -22,8 +22,7 @@ those.
 
 This leaves a lot of content currently not assigned to a module. That’s
 fine, we can figure out how to handle those; for example, we could
-choose to define a module for “uncategorised” for now, and another for
-those packages currently in Optional.
+choose to define a module for “uncategorised” for now.
 
 All we have done so far is to draw boundaries around groups of existing
 packages:
@@ -93,7 +92,7 @@ without confirmation from the module owner.
 
 To automate module composes it will be vital to know exactly which
 version of which packages should be used to compose any given module
-(eg. for brew builds, this would be selected by brew tag.) The important
+(eg. for koji builds, this would be selected by koji tag.) The important
 point is that all of this should be configured in the module metadata so
 that we can compose the entire module automatically.
 
@@ -118,8 +117,8 @@ other modules that this module depends on.
 Of course, we may be composing a module multiple times. And to manage
 consistency between modules when things are changing, we really need to
 be able to determine exactly which version of a module has been composed
-from exactly which versions of its dependencies. So '''each module
-compose must have a unique compose identifier '''of some form; and
+from exactly which versions of its dependencies. So "each module
+compose must have a unique compose identifier" of some form; and
 during a layered module compose, we must record the compose IDs of all
 the modules used as input for this compose.
 
@@ -165,8 +164,8 @@ are the ones we’ve already mentioned:
 One problem with a monolithic compose is that a single problem can fail
 the entire compose.
 
-How do we prevent a similar situation where a broken compose of a base
-runtime module causes compose failures for all other modules depending
+How do we prevent a similar situation where a broken compose of a Base
+Runtime module causes compose failures for all other modules depending
 on it?
 
 Having a granular compose process actually improves this situation
@@ -200,14 +199,14 @@ occurs, we want to be able to recompose both modules and artifacts
 whenever their content changes.
 
 The details of each individual task here are not important; indeed, it
-is important to include many different types of task in this automation.
+is important to include many different types of tasks in this automation.
 Recomposing a module may be triggered by an rpm rebuild; that recompose
 may trigger other module recomposes, and additionally may trigger other
 image rebuilds. We may add CI to the mix so that testing tasks are also
 triggered when appropriate.
 
 What *is* important is that the chaining of tasks is automatic. When
-something changes in the content tree, the build system '''must '''know
+something changes in the content tree, the build system **must** know
 (or be able to tell us) what else needs to be rebuilt or recomposed as a
 consequence; it **must** have the information needed to perform those
 rebuilds without additional manual configuration; and it **should** have
@@ -223,16 +222,11 @@ rebuilt, recomposed or re-tested when its dependencies change. This is
 deliberate: a modular release is, by definition, attempting to break up
 the monolithic, synchronous Compose.
 
-But ultimately, engineering still wants to be able to produce a planned
+But ultimately, Fedora still wants to be able to produce a planned
 release spanning many modules, and users still want to have controlled,
 predictable releases, rather than having modules dribble into a release
 in drips. We still have major release events such as Fedora major/minor
-updates, and we have been going further in this direction recently for
-errata with the advent of consolidated batched updates in Fedora 24
-z-stream. Atomic Host updates need a coordinated release of base Fedora
-updates plus container enablement from -Extras; and a new release of
-Software Collections involves the synchronised release of many
-individual stacks.
+updates. 
 
 So decomposing the release into loosely-coupled compose steps is all
 well enough, but we need more than just chain rebuilds to bring it all

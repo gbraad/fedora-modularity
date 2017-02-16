@@ -12,7 +12,7 @@ with any formal definition of modules or stacks.
 
 Atomic, for example, is composed from multiple sources. Some content
 comes from traditional Fedora with its usual 6-month lifecycle; and some
-comes from -Extras with its much shorter lifecycle and rapid rebasing to
+comes from other repos with much shorter lifecycle and rapid rebasing to
 pick up new features.
 
 And even within Fedora we have different levels of lifecycle. An obvious

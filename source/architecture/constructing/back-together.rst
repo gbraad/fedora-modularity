@@ -11,7 +11,7 @@ Example: Reproducing the traditional distribution versions
 
 Having categorised the Fedora rpms into groups and composed those
 package groups into distinct modules, creating what we have
-traditionally called a distribution variant can now be done simply by
+traditionally called a distribution variant or edition can now be done simply by
 creating a flat yum repository containing all the desired modules for
 that offering. In the terminology we are using here, the output
 repository is simply another output artifact.
@@ -20,14 +20,14 @@ repository is simply another output artifact.
    :alt: constructing-image6.png
 
 
-And of course we can repeat this for different Fedora variants. Having
+And of course we can repeat this for different Fedora editions. Having
 separate GTK and Gnome modules would allow us to include those modules
 when composing the Fedora Workstation repository, but omit those from
-the Client Node variant if we chose. It would also give us a natural way
-to reflect that Gnome may rebase at a different cadence from the base
-runtime.
+the Cloud Edition if we chose. It would also give us a natural way
+to reflect that Gnome may rebase at a different cadence from the Base
+Runtime.
 
-So today’s variants can simply become different ways of selecting from
+So today’s editions can simply become different ways of selecting from
 the available modules.
 
 The installer iso can also be composed from the various modules here, as
@@ -56,10 +56,10 @@ distinct artifact created by a distinct compose task):
    :alt: constructing-image7.png
 
 
-The Fedora-Server base system and Extras today already have distinct
-SLAs and lifecycles. We already build atomic host trees out of both of
+The Fedora Server and COPR repos today already have distinct
+SLAs and lifecycles. We could build atomic host trees out of both of
 those sources, and this can be done easily as a compose step based on
-the base runtime and container platform modules in a modular build of
+the Base Runtime and Container Runtime modules in a modular build of
 the same components.
 
 But we also need to support layered builds, such as additional container
