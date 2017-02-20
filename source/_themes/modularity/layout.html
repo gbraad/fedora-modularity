@@ -30,9 +30,14 @@
           <div class="col-md-9 content">
             <ol class="breadcrumb">
               <li><a href="{{ pathto('', 1) }}">Home</a></li>
-              <li><a href="{{ pathto('docs.html', 1) }}">Docs</a></li>
+              <li><a href="{{ pathto(master_doc) }}">Docs</a></li>
+              {% for doc in parents %}
+                  <li><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+              {% endfor %}
               <li class="active">{{ title }}</li>
             </ol>
+
+            <a href="https://pagure.io/modularity" class="btn btn-default pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
 
             <div class="document">
             {% block body %}{% endblock %}
