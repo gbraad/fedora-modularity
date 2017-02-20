@@ -15,6 +15,10 @@ infrastructure:
    entry via `Fedora Infra
    tracker <https://pagure.io/fedora-infrastructure/issues>`__.
 
+
+Builds in production
+--------------------
+
 If you want to clone your dist-git repository using ``fedpkg``, you need
 to select correct namespace:
 
@@ -28,12 +32,45 @@ or
 
     $ fedpkg clone modules/memcached
 
-Once you are ready to submit a build, you need to push changes to a
-remote and initiate a build
+
+Builds in staging
+-----------------
+
+
+Install ``fedpkg-stage`` which will add ``fedpkg-stage`` executable to your
+system:
 
 ::
 
-    $ fedpkg container-build
+    $ dnf install -y fedpkg-stage
+
+
+If ``fedpkg-stage`` is not able to talk to Fedora infrastructure, it's possible
+that you've hit `this issue
+<https://bugzilla.redhat.com/show_bug.cgi?id=1422892>`__.
+
+Make sure that you have kerberos ticket in stage (you may need to create a
+Fedora infra ticket to get your production credentials copied to stage):
+
+::
+
+    $ kinit $USER@STG.FEDORAPROJECT.ORG
+
+Once you are ready to submit a build, you need to push changes to a
+remote and initiate a build:
+
+::
+
+    $ git push
+    $ fedpkg-stage container-build
+
+
+This is how staging dist-git remote looks like:
+
+::
+
+    git clone git+ssh://git@pkgs.stg.fedoraproject.org/$NAMESPACE/$COMPONENT
+
 
 Inspecting registry
 -------------------
