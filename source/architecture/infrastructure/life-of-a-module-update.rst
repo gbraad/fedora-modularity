@@ -6,7 +6,7 @@ Here’s our depiction of some scenarios for module maintainers, without
 any automation in place. Take a look at the four starting points,
 organized into columns, at the top:
 
-.. figure:: Life-of-a-package-update-future-no-automation.png
+.. figure:: life-of-a-package-update-future-no-automation.png
    :alt: Life-of-a-package-update-future-no-automation.png
    :width: 800px
 
