@@ -1,6 +1,5 @@
-FROM fedora
-RUN dnf -y install httpd git make
-RUN dnf -y install python3-sphinx
+FROM fedora:25
+RUN dnf -y install httpd git make python3-sphinx
 RUN mkdir /source
 ADD ["Makefile", "/"]
 ADD ["build-start.sh", "/"]
