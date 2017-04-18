@@ -226,6 +226,10 @@ RPM package names.
 | ``         rpms:``
 | ``             - myapplication``
 
+If your profile requires some post-installation steps to be performed, the
+prefered solution is to put the script into RPM as a post-install scriptlet.
+
+
 Module API
 ~~~~~~~~~~
 
