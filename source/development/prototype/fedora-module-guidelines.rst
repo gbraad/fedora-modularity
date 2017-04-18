@@ -193,15 +193,22 @@ tracker.
 Module profiles
 ~~~~~~~~~~~~~~~
 
-The module author **MAY** define lists of packages that would be
-installed by default, and a minimum, when the module is enabled and the
-particular profile is selected. Whether the packages actually get
-installed depends on the user's configuration. It is possible to define
-a profile that doesn't install any packages.
+Install profile defines a list of packages to be installed when selected.
+Whether the packages actually get installed depends on the user's
+configuration. It is possible to define a profile that doesn't install any
+packages.
 
-Profile names are arbitrary strings. There is currently one
-special-purpose profile name defined — *default*. More special-purpose
-profile names might be defined in the future.
+List of special-purpose profiles:
+- ``default`` - used unless any other profile was selected.
+- ``container`` - packages meant to be installed inside container image artifact.
+- ``minimal`` - minimal set of packages providing functionality of this module.
+- ``buildroot`` - packages which should be installed into the buildroot of a
+  module which depends on this module.
+- ``srpm-buildroot`` - additional packages which should be installed during the
+  buildSRPMfromSCM step in koji.
+
+For more info see `example modulemd <https://pagure.io/modulemd/blob/master/f/spec.yaml>`__.
+
 
 The *default* profile lists packages that would be installed unless the
 user's configuration dictates otherwise.
