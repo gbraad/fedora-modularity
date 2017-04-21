@@ -22,10 +22,10 @@ On **Fedora 25**, just install the latest version `https://koji.fedoraproject.or
 
     $ sudo dnf install <URL_to_noarch_package>
 
-To build your modulemd, run a command similar to the following:
+To build your modulemd, run a command:
 
 ::
 
     $ mbs-build submit -w
 
-The command will submit and watch the task, so you are able to track a result.
+The command will submit build into infrastructure and watch the task, so you are able to track results.
