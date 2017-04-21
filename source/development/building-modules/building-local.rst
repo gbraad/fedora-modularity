@@ -17,7 +17,7 @@ On **Fedora rawhide** and **Fedora 26**, just install it by:
 
     $ sudo dnf install module-build-service
 
-On **Fedora 25**, just install the latest version from `https://koji.fedoraproject.org/koji/buildinfo?buildID=881812`:
+On **Fedora 25**, just install the latest version from `https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
 
 ::
 
