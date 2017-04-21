@@ -17,11 +17,11 @@ On **Fedora rawhide** and **Fedora 26**, just install it by:
 
     $ sudo dnf install module-build-service
 
-On **Fedora 25**, just install it by:
+On **Fedora 25**, just install the latest version from `https://koji.fedoraproject.org/koji/buildinfo?buildID=881812`:
 
 ::
 
-    $ sudo dnf install https://kojipkgs.fedoraproject.org//packages/module-build-service/1.3.20/5.fc27/noarch/module-build-service-1.3.20-5.fc27.noarch.rpm
+    $ sudo dnf install <URL_to_noarch_package>
 
 To build your modulemd, run a command similar to the following:
 
