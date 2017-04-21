@@ -11,24 +11,23 @@ Both options provide the same result, so choose whichever you like better.
 Option 1: module-build-service package
 --------------------------------------
 
-On **Fedora rawhide**, just install it by:
+On **Fedora rawhide** and **Fedora 26**, just install it by:
 
 ::
 
     $ sudo dnf install module-build-service
 
-I have also created a `Module Build Service copr repo <https://copr.fedorainfracloud.org/coprs/asamalik/mbs/>`__ for Fedora 24 and Fedora 25:
+On **Fedora 25**, just install it by:
 
 ::
 
-    $ sudo dnf copr enable asamalik/mbs
-    $ sudo dnf install module-build-service
+    $ sudo dnf install https://kojipkgs.fedoraproject.org//packages/module-build-service/1.3.20/5.fc27/noarch/module-build-service-1.3.20-5.fc27.noarch.rpm
 
 To build your modulemd, run a command similar to the following:
 
 ::
 
-    $ sudo mbs-manager build_module_locally file:////path/to/my-module?#master
+    $ sudo mbs-build local
 
 An output will be a yum/dnf repository in the /tmp directory.
 
