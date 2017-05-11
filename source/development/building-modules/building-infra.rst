@@ -2,23 +2,30 @@ Building modules in Fedora
 ==========================
 
 When your module is ready to get added to Fedora, you need to have write
-access to the module dist-git on pkgs.stg.fedoraproject.org and you need
+access to the module dist-git on pkgs.fedoraproject.org and you need
 to have pushed all your changes to this module git repository. You can
-build your module using two different methods:
+build your by following method
 
--  A `special version of rpkg <https://pagure.io/fork/karsten/rpkg>`__
-   with module-build support is required for this step. Change the
-   working directory to your local copy of your module repo and simply
-   run
 
-::
+module-build-service package
+--------------------------------------
 
-     fedpkg module-build
-
--  The other method requires that you add the git URL of your latest
-   module commit to the submit-build.json file in the
-   module-build-server git repository and then run
+On **Fedora rawhide** and **Fedora 26**, just install it by:
 
 ::
 
-    python submit-build.py
+    $ sudo dnf install module-build-service
+
+On **Fedora 25**, just install the latest version `https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
+
+::
+
+    $ sudo dnf install <URL_to_noarch_package>
+
+To build your modulemd, run a command:
+
+::
+
+    $ mbs-build submit -w
+
+The command will submit build into infrastructure and watch the task, so you are able to track results.
