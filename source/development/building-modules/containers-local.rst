@@ -4,10 +4,17 @@ Building containers locally
 When you have your module built, let's put it in a container, so we can
 use it. As an example, we will use the `perl image <https://github.com/container-images/perl/blob/master/Dockerfile>`__. 
 
-RPM repository
+Module RPM repository
 --------------
 
-First, upload your RPM repository from the previous step somewhere publicly accessible.
+First, upload your RPM repository from the previous step somewhere publicly accessible. For example, you can use Fedorapeople to host your packages:
+
+::
+
+    $ mkdir module
+    $ cp $RPMS module/
+    $ createrepo_c module/
+    $ rsync ./module/ $USER@fedorapeople.org:public_html/
 
 Dockerfile
 ----------
@@ -32,18 +39,18 @@ The following snippet then shows how you copy the repo and install the files fro
     tar \
     wget \
     python " && \
-  microdnf --nodocs --enablerepo perl install perl perl-devel && \
-  microdnf --nodocs --enablerepo fedora install -y mod_perl cpan cpanminus httpd \
-    $BUILD_TOOlS && \
-	microdnf clean all
+    microdnf --nodocs --enablerepo perl install perl perl-devel && \
+    microdnf --nodocs --enablerepo fedora install -y mod_perl cpan cpanminus httpd \
+      $BUILD_TOOlS && \
+	  microdnf clean all
   RUN mkdir -p /opt/app-root/src/ && \
-  useradd -u 1002 -r -g 0 -d /opt/app-root/src -s /sbin/nologin \
-  -c "Default Application User" default && \
-  chown -R 1002:0 /opt/app-root
+      useradd -u 1002 -r -g 0 -d /opt/app-root/src -s /sbin/nologin \
+      -c "Default Application User" default && \
+      chown -R 1002:0 /opt/app-root
 
 
 Building the image
 -------------------
 
-When you have your repository and Dockerfile ready, use "``docker build .``" to
-build the container image and "``docker tag username/imagename``" so to make it available for public to pull.
+Finally, when you have your repository and Dockerfile ready, use the ``docker build --tag=`` command to
+build the container image.
