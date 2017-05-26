@@ -22,9 +22,8 @@ Contents:
 .. toctree::
     :caption: Development
 
-    development/getting-started
+    development/get-involved
     development/resources
-    development/resources2
     development/building-modules
 
 
@@ -37,7 +36,7 @@ Contents:
 .. toctree::
     :caption: Usability
 
-    usability/user-stories
+    usability/personas
 
 
 
