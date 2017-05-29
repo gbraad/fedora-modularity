@@ -12,38 +12,32 @@ Contents:
 
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Architecture
+    :caption: Design
 
-    architecture/building-naming
-    architecture/constructing
-    architecture/versioning
-    architecture/infrastructure
-    architecture/pdc-changes
+    design/building-naming
+    design/constructing
+    design/versioning
 
 
 .. toctree::
-    :maxdepth: 2
     :caption: Development
 
     development/getting-started
+    development/resources
+    development/resources2
     development/building-modules
-    development/integration
-    development/prototype
 
 
 .. toctree::
-    :maxdepth: 1
+    :caption: Infrastructure
+
+    infrastructure/infrastructure
+
+
+.. toctree::
     :caption: Usability
 
     usability/user-stories
-
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Misc
-
-    misc/faq
 
 
 
