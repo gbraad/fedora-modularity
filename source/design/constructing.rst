@@ -1,5 +1,5 @@
 Constructing a modular distribution
-=========
+===================================
 
 The fundamental objective of the
 Modularity effort is to
