@@ -37,7 +37,7 @@ Once we have parts of the distribution on different release cycles, we
 also have the issue of how to maintain different versions branching on
 different criteria and different schedules. Branching and versioning is
 relevant here, but is a complex topic in its own right and is covered under 
-:doc:`/architecture/versioning`.
+:doc:`/design/versioning`.
 
 .. rubric:: TOC
 

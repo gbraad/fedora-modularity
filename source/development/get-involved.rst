@@ -83,11 +83,6 @@ for higher-level stuff ("epics").
 Technical details
 -----------------
 
-Architecture
-~~~~~~~~~~~~
-
-Refer to :doc:`/architecture/infrastructure`
-
 Code repositories
 ~~~~~~~~~~~~~~~~~
 
@@ -97,8 +92,4 @@ drafts and even a couple of proof-of-concept modules. Repositories
 typically start with the *fm-* prefix and are open to all members of the
 `Pagure @modularity group <https://pagure.io/group/modularity>`__.
 
-Services and tools
-~~~~~~~~~~~~~~~~~~
-
-Refer to :doc:`../prototype/developer-notes`
 
