@@ -494,8 +494,8 @@ External links
    Code <https://www.python.org/dev/peps/pep-0008/>`__
 -  `PEP20: The Zen of
    Python <https://www.python.org/dev/peps/pep-0020/>`__
--  `PyFormat: Using ``%`` and ``.format()`` for great
-   good! <https://pyformat.info/>`__
+-  `PyFormat <https://pyformat.info/>`__: Using ``%`` and ``.format()`` for
+   great good!
 -  `Sphinx Info field
    lists <https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
    for docstrings
