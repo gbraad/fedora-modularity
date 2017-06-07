@@ -1,16 +1,14 @@
 Grooming Your Changes
 =====================
 
-Apart from :doc:`coding-style`,
-there are some things that you should keep in mind regarding the changes
-you submit. Normally you'd develop your changes in a private branch on
-your fork of a repository and, when you're done, submit them as pull
-requests ("PR") against a public branch of the repository. The following
-guidelines concentrate on changes in this format, their goal is to
-enable you to groom the commits forming your pull request so that
-another person can review it without great effort, that the changes can
-be integrated well with the existing code and can be easily debugged
-later if necessary.
+Apart from coding style concerns, there are some things that you should keep in
+mind regarding the changes you submit. Normally you'd develop your changes in a
+private branch on your fork of a repository and, when you're done, submit them
+as pull requests ("PR") against a public branch of the repository. The
+following guidelines concentrate on changes in this format, their goal is to
+enable you to groom the commits forming your pull request so that another
+person can review it without great effort, that the changes can be integrated
+well with the existing code and can be easily debugged later if necessary.
 
 Pull Requests
 -------------

@@ -100,5 +100,5 @@ In order so that our code base is always clean and maintainable, we have to enfo
 .. toctree::
     :maxdepth: 1
 
-    integration/coding-style
+    integration/coding-style-python
     integration/grooming

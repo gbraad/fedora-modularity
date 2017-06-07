@@ -1,8 +1,7 @@
-Coding Style
-============
+Coding Style (Python)
+=====================
 
-Most of our code is written in Python, so this document will concentrate
-on it.
+Read this if you plan to contribute code written in the Python language.
 
 Upstream guidelines
 -------------------
