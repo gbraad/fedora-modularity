@@ -92,4 +92,13 @@ drafts and even a couple of proof-of-concept modules. Repositories
 typically start with the *fm-* prefix and are open to all members of the
 `Pagure @modularity group <https://pagure.io/group/modularity>`__.
 
+Integration of changes
+~~~~~~~~~~~~~~~~~~~~~~
 
+In order so that our code base is always clean and maintainable, we have to enforce certain rules on how code is written or formatted, how changes are broken up into commits and how pull requests are handled.
+
+.. toctree::
+    :maxdepth: 1
+
+    integration/coding-style
+    integration/grooming
