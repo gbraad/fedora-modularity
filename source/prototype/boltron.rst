@@ -34,13 +34,13 @@ If you want to try the DNF prototype or any of the modules above, please refer t
 
 ::
 
-    $ docker pull jamesantill/flat-modules-dnf
+    $ docker pull modularitycontainers/boltron-preview
 
 Then start the container using this image with an interactive shell:
 
 ::
 
-    $ docker run --rm -it jamesantill/flat-modules-dnf /bin/bash
+    $ docker run --rm -it modularitycontainers/boltron-preview /bin/bash
 
 You can list the available modules:
 
