@@ -188,13 +188,25 @@ a.btn-primary:hover {
   border-color: #072b61;
 }
 
+a.btn-boltron {
+  background-color: #ad4a73;
+  border-color: #ad4a73;
+  color: white;
+}
+
+a.btn-boltron:hover {
+  background-color: #6f2443;
+  border-color: #6f2443;
+  color: white;
+}
+
 div.small-jumbotron {
   padding: 30px 0;
   font-size: 1.2em;
 }
 
 div.small-jumbotron h2 {
-
+  margin-top: 4px;
 }
 
 div.small-jumbotron-white {
@@ -209,10 +221,15 @@ div.small-jumbotron-black {
   color: white;
 }
 
+div.small-jumbotron-boltron {
+  background-color: #942653;
+  color: white;
+}
+
 
 div.viz-distro {
   border-radius: 10px;
-  background-color: #e6e6e6;
+  background-color: #ccc;
   padding: 10px 0 1px;
   font-size: 16px;
   margin: 40px 0;
@@ -239,7 +256,7 @@ div.viz-component-old {
 }
 
 div.viz-component-module {
-  background-color: #a4560a;
+  background-color: #b16d2b;
   height: 82px;
   padding-top: 30px;
 }

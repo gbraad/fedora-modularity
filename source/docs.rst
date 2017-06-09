@@ -9,6 +9,10 @@ Documentation Index
 Contents:
 
 
+.. toctree::
+    :caption: Prototype
+
+    prototype/boltron
 
 
 .. toctree::
