@@ -22,6 +22,7 @@ The following is a list of modules that we have completed:
 - `MariaDB <https://github.com/modularity-modules/mariadb>`__
 - `MongoDB <https://github.com/modularity-modules/mongodb>`__
 - `PostgreSQL <https://github.com/modularity-modules/postgresql>`__
+- `DHCP Client <https://github.com/modularity-modules/dhcp>`__
 
 
 For more information about individual modules - both completed and in progress - see the `Fedora Modularity: Modules GitHub space <https://github.com/modularity-modules>`__.
