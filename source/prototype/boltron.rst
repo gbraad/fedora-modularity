@@ -1,7 +1,7 @@
 Fedora 26 Boltron Server
 ========================
 
-Boltron is a upcoming prototype of Fedora Modularity. A formal description is documented in `Changes/Modular Server Preview <https://fedoraproject.org/wiki/Changes/Modular_Server_Preview>`__ on the Fedora wiki. **This page is going to track the progress** of the release.
+Boltron is an upcoming prototype of Fedora Modularity. A formal description is documented in `Changes/Modular Server Preview <https://fedoraproject.org/wiki/Changes/Modular_Server_Preview>`__ on the Fedora wiki. **This page tracks the progress** of the release.
 
 
 Modules in Boltron
@@ -21,9 +21,10 @@ The following is a list of modules that we have completed:
 - `container-runtime <https://github.com/modularity-modules/container-runtime>`__
 - `MariaDB <https://github.com/modularity-modules/mariadb>`__
 - `MongoDB <https://github.com/modularity-modules/mongodb>`__
+- `PostgreSQL <https://github.com/modularity-modules/postgresql>`__
 
 
-For more information about individual modules - both completed and in progress - see our `Fedora Modularity: Modules GitHub space <https://github.com/modularity-modules>`__.
+For more information about individual modules - both completed and in progress - see the `Fedora Modularity: Modules GitHub space <https://github.com/modularity-modules>`__.
 
 DNF prototype
 -------------
