@@ -15,7 +15,7 @@ The following is a list of modules that we have completed:
 - `memcached <https://github.com/modularity-modules/memcached>`__
 - `haproxy <https://github.com/modularity-modules/haproxy>`__
 - `source-to-image <https://github.com/modularity-modules/source-to-image>`__
-- `PERL <https://github.com/modularity-modules/perl>`__
+- `Perl <https://github.com/modularity-modules/perl>`__
 - `dhcp-server <https://github.com/modularity-modules/dhcp-server>`__
 - `postfix <https://github.com/modularity-modules/postfix>`__
 - `container-runtime <https://github.com/modularity-modules/container-runtime>`__
