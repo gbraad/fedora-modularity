@@ -21,4 +21,3 @@ $ make html
 ```
 
 The result will be in `build/html/`.
-
