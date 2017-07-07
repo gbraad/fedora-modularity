@@ -1,5 +1,5 @@
 Building and naming modular things
-=========
+==================================
 
 We have some basic terminology confusion around modules. Is a container
 image the same thing as a module? Is a software collection a single

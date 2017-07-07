@@ -1,5 +1,5 @@
 Module versioning and branching
-=========
+===============================
 
 The primary core principle of Modularity is that our content should be
 released not as large, monolithic distribution releases, but in units of

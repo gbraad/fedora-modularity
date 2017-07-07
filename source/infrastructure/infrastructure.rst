@@ -1,5 +1,5 @@
 Infrastructure
-=========
+==============
 
 Modularity will be built using the `Factory 2.0, documented on the Fedora wiki <https://fedoraproject.org/wiki/Infrastructure/Factory2>`__.
 

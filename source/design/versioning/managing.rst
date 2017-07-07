@@ -74,7 +74,7 @@ updates to an existing branch as needed to suit internal developer
 needs.
 
 This suggests that we want to include tooling support for inheriting such a
- branch. Technically, this might involve creating new branches
+branch. Technically, this might involve creating new branches
 for only a subset of the packages of a module; and recording the base
 module from which we pull other packages during a module compose.
 
