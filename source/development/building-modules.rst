@@ -8,6 +8,7 @@ Building Modules
 
 
     building-modules/developing
+    building-modules/module-guidelines
     building-modules/building-local
     building-modules/containers-local
     building-modules/standalone-containers
