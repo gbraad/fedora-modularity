@@ -10,8 +10,9 @@
           <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
         </a>
         <ul class="nav nav-pills pull-right main-menu">
-          <li role="presentation" class="active"><a href="{{ pathto('', 1) }}">Home</a></li>
-          <li role="presentation"><a href="{{ pathto('docs.html', 1) }}">Docs</a></li>
+          <li role="presentation" class="active"><a href="{{ pathto('', 1) }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li role="presentation"><a href="{{ pathto('boltron/', 1) }}"><span class="glyphicon glyphicon-fire"></span> Prototype</a></li>
+          <li role="presentation"><a href="{{ pathto('docs.html', 1) }}"><span class="glyphicon glyphicon-book"></span> Docs</a></li>
         </ul>
       </div>
     </div>
@@ -26,12 +27,13 @@
 
     <div class="small-jumbotron small-jumbotron-boltron">
       <div class="container">
-        <h2> Boltron is coming! </h2>
-        <p> We are building a <b>modular prototype</b>. Follow the progress, try it, and give us feedback.</p>
-        <p><a class="btn btn-boltron" href="{{ pathto('prototype/boltron.html', 1) }}" role="button">Fedora 26 Boltron Server</a></p>
+        <h2> Boltron is here! </h2>
+        <p>We have built the <b>first modular prototype</b> - Fedora 26 Boltron Server!</p>
+        <p><a class="btn btn-boltron" href="{{ pathto('boltron/', 1) }}" role="button">Learn more about Boltron</a> </p>
       </div>
     </div>
 
+    <!--
     <div class="small-jumbotron small-jumbotron-white">
       <div class="container">
         <div class="embed-responsive embed-responsive-16by9">
@@ -39,74 +41,54 @@
         </div>
       </div>
     </div>
+    -->
 
     <div class="small-jumbotron small-jumbotron-shadow">
       <div class="container">
-        <h2> When you want a rolling release. But not really. </h2>
+        <h2> Moving focus from <b>packages</b> to <b>components</b> </h2>
 
-        <p>  How do I get a <strong>cutting-edge runtime </strong> along with a <strong>stable database</strong>? </p>
+        <p><b>Modularity splits the Linux distribution</b> into smaller pieces called <b>modules</b>.<br>
+          Modules are provided in <b>multiple streams</b> and on <b>independent lifecycles</b>.</p>
 
-        <div class="row text-center">
-          <div class="col-md-3 col-sm-6">
-            <div class="viz-distro">
-              <h3> Fast Release </h3>
-              <div class="viz-component viz-component-new">
-                new app runtime
-              </div>
-              <div class="viz-component viz-component-old">
-                new database
-              </div>
-              <div class="viz-component viz-component-new">
-                new kernel
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="viz-distro">
-              <h3> Stable Release </h3>
-              <div class="viz-component viz-component-old">
-                old app runtime
-              </div>
-              <div class="viz-component viz-component-new">
-                stable database
-              </div>
-              <div class="viz-component viz-component-old">
-                old kernel
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="viz-distro">
-              <h3> Modularity </h3>
-              <div class="row">
-                <div class="col-xs-6" style="padding-right:0">
-                  <div class="viz-component viz-component-module">
-                    new app runtime
-                  </div>
-                </div>
-                <div class="col-xs-6" style="padding-left:0">
-                  <div class="viz-component viz-component-module">
-                    stable database
-                  </div>
-                </div>
-              </div>
-              <div class="viz-component viz-component-new">
-                new kernel
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <p> Modularity separates the hardware side (<strong>Base Runtime</strong>) from the application side (<strong>Modules</strong>). Different modules can have different goals like a specific <strong>version</strong>, <strong>stability</strong>, or closely <strong>following upstream</strong>.</p>
+        <img src="{{ pathto('_static/homepage-images/modularity.png', 1) }}">
       </div>
     </div>
 
 
 
-
-
-
     <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2>Giving <b>users choice</b> and <b>packagers flexibility</b></h2>
+        <p>Modules come in different <b>streams</b> with <b>independent lifecycles</b>.<br>
+          Streams have <b>different goals</b> - <b>specific version</b>, <b>stability</b>, or <b>following upstream</b>.</p>
+        <img src="{{ pathto('_static/homepage-images/streams.png', 1) }}">
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-shadow">
+      <div class="container">
+        <h2><b>Module</b> as an ultimate <b>build recipe</b></h2>
+        <p>Packagers decide <b>how to build</b> - by defining <b>components</b>, <b>build order</b>, and <b>buildroot</b>.</p>
+        <img class="jumbo-image-smaller" src="{{ pathto('_static/homepage-images/build-recipe1.png', 1) }}">
+
+        <p>Packagers decide <b>what to ship</b> - by <b>filtering</b> unnecessary binary packages.</p>
+        <img class="jumbo-image-smaller" src="{{ pathto('_static/homepage-images/build-recipe2.png', 1) }}">
+
+        <p>Packagers decide <b>how to use</b> - by defining a supported <b>API</b> and <b>install profiles</b>.</p>
+        <img class="jumbo-image-smaller" src="{{ pathto('_static/homepage-images/build-recipe3.png', 1) }}">
+      </div>
+    </div>
+    <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2><b>Modules run</b> almost <b>everywhere</b></h2>
+        <p><b>Each module</b> can be built into <b>multiple artifacts</b>.<br>
+          <b>Containers</b> for clouds and servers, <b>flatpaks</b>* for desktop, <b>RPMs</b> for tradition.</p>
+        <img style="margin-bottom:0" src="{{ pathto('_static/homepage-images/artifacts.png', 1) }}">
+        <p class="text-muted">* Flatpaks are more future than the other two, but on the list!</p>
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-shadow">
       <div class="container">
         <h2>Follow our progress</h2>
         <p>We post regular updates to our <a href="https://www.youtube.com/channel/UC4O8G9SZwqtkIAuKcT8-JpQ">Fedora Modularity YouTube Channel</a>.</p>
@@ -114,7 +96,7 @@
       </div>
     </div>
 
-    <div class="small-jumbotron small-jumbotron-shadow">
+    <div class="small-jumbotron small-jumbotron-white">
       <div class="container">
         <h2>Get in touch!</h2>
 	<p>Come to our <a href="https://apps.fedoraproject.org/calendar/modularity/">regular meeting</a>, ask us on the <a href="https://lists.fedoraproject.org/archives/search?mlist=devel%40lists.fedoraproject.org&q=%5Bmodularity%5D">mailing list</a>, or discuss on our <a href="irc://freenode/fedora-modularity">IRC channel</a>. </p>

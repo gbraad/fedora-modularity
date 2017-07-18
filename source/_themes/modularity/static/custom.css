@@ -14,7 +14,8 @@
 
 h1, h2, h3, h4, h5, h6,
 div.website-header,
-div.jumbotron-home {
+div.jumbotron-home,
+div.small-jumbotron {
   font-family: 'Alte Haas Grotesk'!important;
 }
 
@@ -200,9 +201,26 @@ a.btn-boltron:hover {
   color: white;
 }
 
+div.small-jumbotron ul.module-list {
+  font-family: monospace;
+}
+
 div.small-jumbotron {
-  padding: 30px 0;
+  padding: 50px 0;
   font-size: 1.2em;
+}
+
+div.small-jumbotron div img {
+  margin: 8px 0 20px;
+  max-height:330px;
+}
+
+div.small-jumbotron div img.jumbo-image-smaller {
+  max-height:270px;
+}
+
+div.small-jumbotron p {
+  margin-top: 20px;
 }
 
 div.small-jumbotron h2 {

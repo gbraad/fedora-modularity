@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.html" %}
+  </head>
+  <body>
+    <div class="website-header" style="background-color:#942653!important">
+      <div class="container">
+        <a href="{{ pathto('', 1) }}">
+          <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
+        </a>
+        <ul class="nav nav-pills pull-right main-menu">
+          <li role="presentation"><a href="{{ pathto('', 1) }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li role="presentation" class="active"><a href="{{ pathto('boltron/', 1) }}"><span class="glyphicon glyphicon-fire"></span> Prototype</a></li>
+          <li role="presentation"><a href="{{ pathto('docs.html', 1) }}"><span class="glyphicon glyphicon-book"></span> Docs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-home" style="background-color:#942653!important">
+      <div class="container">
+        <h1>Boltron is here!</h1>
+        <p>We have built the <b>first modular prototype</b> - Fedora 26 Boltron Server!</p>
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-shadow">
+      <div class="container">
+        <h2><b>Download</b> and try Boltron</h2>
+        <p>Boltron is available as many artifacts including a container image, iso, and a qcow image.</p>
+        <a href="{{ pathto('prototype/boltron/download.html', 1) }}" class="btn btn-primary">Download Boltron</a>
+      </div>
+    </div>
+
+
+
+    <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2>There are <b>25 modules</b> for you to play with</h2>
+        <p>The following is a <b>list of 25 modules included in Boltron</b>. Many of them are also built as <b>containers</b>.</p><!-- All modules are tracked in the <a href="https://github.com/modularity-modules">Fedora Modularity: Modules GitHub</a> space. <br>
+        Many modules are also available as <b>containers</b> in the <a href="https://hub.docker.com/u/modularitycontainers/">modularitycontainers</a> dockerhub namespace.-->
+        <div class="row well">
+          <ul class="col-sm-4 list-unstyled module-list">
+            <li>base-runtime-f26</li>
+            <li>container-runtime-f26</li>
+            <li>dhcp-f26</li>
+            <li>dhcp-server-f26</li>
+            <li>dnf-f26</li>
+            <li>haproxy-f26</li>
+            <li>httpd-f26</li>
+            <li>installer-f26</li>
+            <li>mariadb-f26</li>
+          </ul>
+          <ul class="col-sm-4 list-unstyled module-list">
+            <li>memcached-f26</li>
+            <li>mongodb-f26</li>
+            <li>nginx-f26</li>
+            <li>nodejs-8</li>
+            <li>nodejs-f26</li>
+            <li>perl-f26</li>
+            <li>perl-Unicode-EastAsianWidth-f26</li>
+            <li>php-f26</li>
+            <li>postfix-f26</li>
+          </ul>
+          <ul class="col-sm-4 list-unstyled module-list">
+            <li>postgresql-f26</li>
+            <li>shared-userspace-f26</li>
+            <li>shim-master</li>
+            <li>source-to-image-f26</li>
+            <li>sssd-f26</li>
+            <li>systemtools-f26</li>
+            <li>varnish-f26</li>
+          </ul>
+        </div>
+        <a href="{{ pathto('prototype/boltron/content.html', 1) }}" class="btn btn-primary">Learn about Boltron content</a>
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-shadow">
+      <div class="container">
+        <h2>We would love to hear your <b>feedback</b>!</h2>
+        <p>You can give us either <b>general Modularity feedback</b> or try the walkthrough for more detailed and <b>UX feedback</b>. </p>
+        <p>
+          <a class="btn btn-primary" href="http://bit.ly/mod-feedback">General feedback</a>
+          <a class="btn btn-primary" href="http://bit.ly/mod-walkthrough">Walkthrough and UX feedback</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="small-jumbotron small-jumbotron-white">
+      <div class="container">
+        <h2>Watch the <b>videos</b></h2>
+        <p>There is a series of <b>videos coming out</b> on YouTube that will help you get started with Boltron. See our <a href="https://www.youtube.com/channel/UC4O8G9SZwqtkIAuKcT8-JpQ">Fedora Modularity YouTube channel</a>.</p>
+        <a href="https://www.youtube.com/playlist?list=PLcwHJG45BmAMPWlnn8BCCdBaq_wVsFOKR" class="btn btn-primary">Boltron on Youtube</a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+      {% include "footer.html" %}
+      </div>
+    </footer>
+
+  </body>
+</html>
