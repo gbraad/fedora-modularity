@@ -131,7 +131,7 @@ html_theme = 'modularity'
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = ["_themes"]
 
-html_additional_pages = {'index': 'index.html'}
+html_additional_pages = {'index': 'index.html', 'boltron/index': 'boltron/index.html'}
 
 
 # The name for this set of Sphinx documents.

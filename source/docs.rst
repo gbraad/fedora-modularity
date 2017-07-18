@@ -6,17 +6,17 @@
 Documentation Index
 =================================
 
-Contents:
-
 
 .. toctree::
     :caption: Prototype
+    :maxdepth: 2
 
     prototype/boltron
 
 
 .. toctree::
     :caption: Design
+    :maxdepth: 2
 
     design/building-naming
     design/constructing
@@ -25,6 +25,7 @@ Contents:
 
 .. toctree::
     :caption: Development
+    :maxdepth: 2
 
     development/get-involved
     development/resources
@@ -33,20 +34,15 @@ Contents:
 
 .. toctree::
     :caption: Infrastructure
+    :maxdepth: 2
 
     infrastructure/infrastructure
 
 
 .. toctree::
     :caption: Usability
+    :maxdepth: 2
 
     usability/personas
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
