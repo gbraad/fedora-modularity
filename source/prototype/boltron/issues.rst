@@ -23,3 +23,7 @@ Microdnf doesn't support modules
 
 Microdnf is a lightweight version of dnf written it C, so it doesn't depend on Python. It supports only the basic commands like install. Right now, it doesn't support modules, so the full version of DNF needs to be used.
 
+Update command is `dnf module update`, not `dnf update`
+.......................................................
+
+As Boltron won't get any updates, the update functionality wasn't the biggest priority. Even with this it has been fully implemented client-side in a 'dnf module update' command. The 'dnf update' command will work as expected in F27.

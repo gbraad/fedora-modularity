@@ -16,7 +16,7 @@ Fedora 26 Boltron Server is a first prototype of a modular distribution.
 .. toctree::
     :maxdepth: 1
 
-    boltron/download
+    boltron/instructions
     boltron/content
     boltron/feedback
     boltron/issues
