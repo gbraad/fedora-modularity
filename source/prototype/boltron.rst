@@ -6,7 +6,7 @@ Fedora 26 Boltron Server is a first prototype of a modular distribution.
 
 .. raw:: html
 
-    <a href="/boltron/" class="btn btn-primary">Prototype homepage</a>
+    <a href="../boltron/" class="btn btn-primary">Prototype homepage</a>
 
 
 
