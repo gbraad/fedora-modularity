@@ -1,17 +1,12 @@
 Boltron Instructions
 ====================
 
-First, please download the boltron in the :doc:`/prototype/boltron/download` section. A container image is recommended if you just want to test the user experience - as it is the easiest to run.
+Boltron is shipped as a container image. Use the following commands to pull it and run it:
 
 ::
 
-  $ docker run --rm -it fedora:26-modular /bin/bash
-
-Because we want our container images small, we include microdnf instead of the full dnf. To test the modularity user experience, you need to first install the full dnf:
-
-::
-
-  $ microdnf install dnf
+  $ docker pull registry.fedoraproject.org/f26-modular/boltron
+  $ docker run --rm -it f26-modular/boltron
 
 Now you are ready to try Boltron!
 
