@@ -288,7 +288,10 @@ RPM content
 Module RPM content is defined in the ``rpms`` subsection of
 ``components`` and typically consists of one or more packages described
 by their SRPM names and additional extra key-value pairs, some required
-and some optional, associated with them.
+and some optional, associated with them. The packages listed contain everything
+that makes up the API of the module, as well as any build and runtime
+dependencies of them that aren't satisfied by modules listed as
+``buildrequires`` or ``requires`` in the ``dependencies`` section.
 
 ::
 
@@ -306,7 +309,7 @@ and some optional, associated with them.
                  multilib:
                      - x86_64
              dependency-of-foo:
-                 rationale: Needed for foo.
+                 rationale: Needed for building foo.
                  buildorder: 50
                  repository: git://git.example.com/dependency-of-foo.git
                  ref: master
@@ -430,6 +433,32 @@ optional metadata.
                  foo:
                      rationale: An example RPM component.
 
+Minimal module with RPM content and build dependency
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Yet another flavour of the minimal module, containing one RPM package
+with SRPM name ``foo`` and another with SRPM name ``bar`` which is required for building and running ``foo``. This module doesn't define any dependencies on other modules or optional metadata.
+
+::
+
+     document: modulemd
+     version: 1
+     data:
+         summary: An example summary
+         description: And an example description.
+         license:
+             module:
+                 - MIT
+         components:
+             rpms:
+                 foo:
+                     rationale: An example RPM component.
+                     buildorder: 2
+                 bar:
+                     rationale: >
+                         An example build and runtime dependency of foo.
+                     buildorder: 1
+
 Minimal module with RPM content but with the -docs subpackage excluded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -549,11 +578,15 @@ included components and populate the ``data`` → ``license`` → ``content`` li
              rpms:
                  common-package:
                      rationale: The key component of this module.
+                     buildorder: 2
                      ref: common-release-branch
                  common-plugins:
                      rationale: Extensions for common-package.
-                     buildorder: 1
+                     buildorder: 3
                      ref: common-release-branch
+                 common-builddep:
+                     rationale: A build dependency of common-package.
+                     buildorder: 1
 
 Complete module definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
