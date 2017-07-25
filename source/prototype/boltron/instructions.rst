@@ -6,7 +6,7 @@ Boltron is shipped as a container image. Use the following commands to pull it a
 ::
 
   $ docker pull registry.fedoraproject.org/f26-modular/boltron
-  $ docker run --rm -it f26-modular/boltron
+  $ docker run --rm -it registry.fedoraproject.org/f26-modular/boltron
 
 Now you are ready to try Boltron!
 
