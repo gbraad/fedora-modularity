@@ -18,10 +18,10 @@ DNF doesn't show some modules as installed
 
 This is specificaly about the `base-runtime`, `shared-userspace`, and `dnf` modules. The packages from these modules are avilable, but the `dnf module list --installed` won't list them.
 
-Microdnf doesn't support modules
+Microdnf and rpm-ostree don't support modules
 ................................
 
-Microdnf is a lightweight version of dnf written it C, so it doesn't depend on Python. It supports only the basic commands like install. Right now, it doesn't support modules, so the full version of DNF needs to be used.
+Besides `dnf`, there are two other package managers in Fedora.  Both `microdnf` and `rpm-ostree` use `libdnf`, which does not yet support modules.  If you're building a container, use the non-minimal image.  A future version of Atomic Host's  `rpm-ostree` package layering may support modules.
 
 Update command is `dnf module update`, not `dnf update`
 .......................................................
