@@ -15,7 +15,7 @@ space <https://github.com/modularity-modules>`__.
 You can also use one of the feedback forms: :doc:`/prototype/boltron/feedback`.
 
 List of known Issues
---------------
+--------------------
 
 DNF doesn't show some modules as installed
 ..........................................
@@ -25,7 +25,7 @@ modules. The packages from these modules are avilable, but the `dnf module
 list --installed` won't list them.
 
 Microdnf and rpm-ostree don't support modules
-................................
+.............................................
 
 Besides `dnf`, there are two other package managers in Fedora.  Both
 `microdnf` and `rpm-ostree` use `libdnf`, which does not yet support modules.
