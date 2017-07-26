@@ -10,9 +10,21 @@
           <img class="logo" src="{{ pathto('_static/logo.png', 1) }}">
         </a>
         <ul class="nav nav-pills pull-right main-menu">
-          <li role="presentation"><a href="{{ pathto('', 1) }}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-          <li role="presentation"><a href="{{ pathto('boltron/', 1) }}"><span class="glyphicon glyphicon-fire"></span> Prototype</a></li>
-          <li role="presentation" class="active"><a href="{{ pathto('docs.html', 1) }}"><span class="glyphicon glyphicon-book"></span> Docs</a></li>
+          <li role="presentation">
+            <a href="{{ pathto('', 1) }}">
+              <span class="glyphicon glyphicon-home"></span> Home
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="{{ pathto('boltron/', 1) }}">
+              <span class="glyphicon glyphicon-fire"></span> Prototype
+            </a>
+          </li>
+          <li role="presentation" class="active">
+            <a href="{{ pathto('docs.html', 1) }}">
+              <span class="glyphicon glyphicon-book"></span> Docs
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,7 +50,10 @@
               <li class="active">{{ title }}</li>
             </ol>
 
-            <a href="https://pagure.io/modularity" class="btn btn-default pull-right"><span class="glyphicon glyphicon-pencil"></span> Edit</a>
+            <a href="https://pagure.io/modularity"
+               class="btn btn-default pull-right">
+              <span class="glyphicon glyphicon-pencil"></span> Edit
+            </a>
 
             <div class="document">
             {% block body %}{% endblock %}
@@ -48,14 +63,23 @@
 
             <div class="next-prev-btns">
               {% if next %}
-                <a href="{{ next.link|e }}" class="btn btn-default pull-right">{{ _('Next') }} <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a href="{{ next.link|e }}" class="btn btn-default pull-right">
+                  {{ _('Next') }}
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
               {% else %}
                 <a href="" class="btn btn-default pull-right disabled"> <span class="glyphicon glyphicon-chevron-right"></span></a>
               {% endif %}
               {% if prev %}
-                <a href="{{ prev.link|e }}" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> {{ _('Previous') }}</a>
+                <a href="{{ prev.link|e }}" class="btn btn-default">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  {{ _('Previous') }}
+                </a>
               {% else %}
-                <a href="" class="btn btn-default disabled"><span class="glyphicon glyphicon-chevron-left"></span> {{ _('Previous') }}</a>
+                <a href="" class="btn btn-default disabled">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  {{ _('Previous') }}
+                </a>
               {% endif %}
             </div>
 

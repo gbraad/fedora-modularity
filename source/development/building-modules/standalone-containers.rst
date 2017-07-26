@@ -13,15 +13,20 @@ have to learn new commands while still being able to work with containers.
 Requirements
 ------------
 
-- Only a single instance of a standalone container is supported to run on a host (installation of the same container image twice won't be successful).
+- Only a single instance of a standalone container is supported to run on a
+  host (installation of the same container image twice won't be successful).
 - Services are managed via systemd unit files.
 - Containers are installed to a system.
 - There is no dedicated network namespace.
-- Configuration is stored in the same locations on the host as a non-containerized service.
-- Persistent data can be found in the same locations on the host as for non-containerized service.
-- Service presence, configuration and persistent data are tracked by the RPM database.
+- Configuration is stored in the same locations on the host as a
+  non-containerized service.
+- Persistent data can be found in the same locations on the host as for
+  non-containerized service.
+- Service presence, configuration and persistent data are tracked by the RPM
+  database.
 - Application lifecycle is close to services deployed as RPMs.
-- Some commands may need to be executed inside the container since the service is not running directly on host.
+- Some commands may need to be executed inside the container since the
+  service is not running directly on host.
 
 
 Quick how-to
@@ -29,8 +34,9 @@ Quick how-to
 
 We utilize the atomic command to install a container image on a host.
 
-In order to get files from a container image to the host, you should have a specific
-directory structure inside your container image. Here's an example of nginx container image:
+In order to get files from a container image to the host, you should have a
+specific directory structure inside your container image. Here's an example
+of nginx container image:
 
 ::
 
@@ -71,9 +77,13 @@ directory structure inside your container image. Here's an example of nginx cont
                             └── poweredby.png
 
 
-- **exports** directory is what atomic uses, it is in a root of the container image
-- **hostfs** is a tree of directories and files which will land on the host, tracked by a generated RPM
-- a systemd unit :code:`nginx-container.service`, which controls the containerized nginx, is placed in :code:`/exports/hostfs/usr/lib/systemd/system`
+- **exports** directory is what atomic uses, it is in a root of the container
+  image
+- **hostfs** is a tree of directories and files which will land on the host,
+  tracked by a generated RPM
+- a systemd unit :code:`nginx-container.service`, which controls the
+  containerized nginx, is placed in
+  :code:`/exports/hostfs/usr/lib/systemd/system`
 
 Here's the mentioned :code:`nginx-container.service`:
 
@@ -100,9 +110,11 @@ Once the image is built, you can install it like this:
 
 
 There is no released version of atomic with this functionality, yet. The
-version of atomic command built `in this copr repo <https://copr.fedorainfracloud.org/coprs/ttomecek/atomic/>`__ contains the functionality to
-install standalone container image.
+version of atomic command built `in this copr repo
+<https://copr.fedorainfracloud.org/coprs/ttomecek/atomic/>`__ contains the
+functionality to install standalone container image.
 
 Most of the principles of standalone containers are based on the model &
 technology of system containers. If you would like to know more about system
-containers read `the blog post <http://www.projectatomic.io/blog/2016/09/intro-to-system-containers/>`__.
+containers read `the blog post
+<http://www.projectatomic.io/blog/2016/09/intro-to-system-containers/>`__.

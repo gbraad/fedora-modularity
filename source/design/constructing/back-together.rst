@@ -11,10 +11,10 @@ Example: Reproducing the traditional distribution versions
 
 Having categorised the Fedora rpms into groups and composed those
 package groups into distinct modules, creating what we have
-traditionally called a distribution variant or edition can now be done simply by
-creating a flat yum repository containing all the desired modules for
-that offering. In the terminology we are using here, the output
-repository is simply another output artifact.
+traditionally called a distribution variant or edition can now be done simply
+by creating a flat yum repository containing all the desired modules for that
+offering. In the terminology we are using here, the output repository is
+simply another output artifact.
 
 .. figure:: constructing-image6.png
    :alt: constructing-image6.png

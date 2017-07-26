@@ -39,8 +39,8 @@ straightened out.
 
 Adding `docstrings <https://www.python.org/dev/peps/pep-0257/>`__ to
 modules, classes, methods and functions is encouraged. If you use the
-`Sphinx
-format <https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
+`Sphinx format
+<https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
 to describe parameters, return values, etc., even better!
 
 Python 2 and 3
@@ -488,15 +488,15 @@ property and therefore the setter method.
 External links
 --------------
 
--  `Python Design and History
-   FAQ <https://docs.python.org/dev/faq/design.html>`__
--  `PEP8: Style Guide for Python
-   Code <https://www.python.org/dev/peps/pep-0008/>`__
--  `PEP20: The Zen of
-   Python <https://www.python.org/dev/peps/pep-0020/>`__
--  `PyFormat <https://pyformat.info/>`__: Using ``%`` and ``.format()`` for
-   great good!
--  `Sphinx Info field
-   lists <https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
-   for docstrings
+- `Python Design and History
+  FAQ <https://docs.python.org/dev/faq/design.html>`__
+- `PEP8: Style Guide for Python
+  Code <https://www.python.org/dev/peps/pep-0008/>`__
+- `PEP20: The Zen of
+  Python <https://www.python.org/dev/peps/pep-0020/>`__
+- `PyFormat <https://pyformat.info/>`__: Using ``%`` and ``.format()`` for
+  great good!
+- `Sphinx Info field lists
+  <https://sphinx.readthedocs.io/en/stable/domains.html#info-field-lists>`__
+  for docstrings
 

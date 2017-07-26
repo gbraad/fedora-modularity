@@ -434,10 +434,10 @@ Minimal module with RPM content but with the -docs subpackage excluded
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Yet another flavour of the minimal module, containing one RPM package
-with SRPM name ``foo``. A build of ``foo`` creates binary packages ``foo-1.0-1``
-and the subpackage ``foo-doc-1.0-1``. Both would get included in the
-module for any architecture if no filter were be used. This module
-doesn't define any dependencies or optional metadata.
+with SRPM name ``foo``. A build of ``foo`` creates binary packages
+``foo-1.0-1`` and the subpackage ``foo-doc-1.0-1``. Both would get included in
+the module for any architecture if no filter were be used. This module doesn't
+define any dependencies or optional metadata.
 
 ::
 
@@ -558,7 +558,8 @@ included components and populate the ``data`` → ``license`` → ``content`` li
 Complete module definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-See the `modulemd specification <https://pagure.io/modulemd/blob/master/f/spec.yaml>`_.
+See the `modulemd specification
+<https://pagure.io/modulemd/blob/master/f/spec.yaml>`_.
 
 SLAs and EOLs
 -------------

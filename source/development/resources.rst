@@ -21,11 +21,13 @@ Content
 `Base Runtime <https://github.com/fedora-modularity/base-runtime>`__ -
 The Base Runtime is a small system used as a base for running modules.
 
-`Modules <https://github.com/modularity-modules>`__ - 
-All the modules we are working on are in the following GitHub organization. Modules are defined by modulemd.
+`Modules <https://github.com/modularity-modules>`__ - All the modules we are
+working on are in the following GitHub organization. Modules are defined by
+modulemd.
 
-`Containers <https://github.com/container-images>`__ -
-All modules can be also delivered as containers. The following GitHub organization contains definitions of all our containers.
+`Containers <https://github.com/container-images>`__ - All modules can be
+also delivered as containers. The following GitHub organization contains
+definitions of all our containers.
 
 
 Scripts and tooling

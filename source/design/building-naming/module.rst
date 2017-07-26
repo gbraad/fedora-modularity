@@ -35,6 +35,6 @@ they both assemble existing compiled packages into bundled output; but
 the module compose is just one single targeted assembly, whereas the
 full distribution Compose typically creates multiple repositories and
 images as output in a single large job. Also note that we can, in theory,
-perform the build (compilation) of the packages within a module, and the compose of
-the module itself, as a single step; we might term this a **module
+perform the build (compilation) of the packages within a module, and the
+compose of the module itself, as a single step; we might term this a **module
 build.**

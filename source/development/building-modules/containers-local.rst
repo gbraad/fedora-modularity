@@ -2,12 +2,14 @@ Building containers locally
 ===========================
 
 When you have your module built, let's put it in a container, so we can
-use it. As an example, we will use the `perl image <https://github.com/container-images/perl/blob/master/Dockerfile>`__. 
+use it. As an example, we will use the `perl image
+<https://github.com/container-images/perl/blob/master/Dockerfile>`__. 
 
 Module RPM repository
 ---------------------
 
-First, upload your RPM repository from the previous step somewhere publicly accessible. For example, you can use Fedorapeople to host your packages:
+First, upload your RPM repository from the previous step somewhere publicly
+accessible. For example, you can use Fedorapeople to host your packages:
 
 ::
 
@@ -19,13 +21,17 @@ First, upload your RPM repository from the previous step somewhere publicly acce
 Dockerfile
 ----------
 
-Next step will be writing a Dockerfile to build a container image with your module.
+Next step will be writing a Dockerfile to build a container image with your
+module.
 
-The Base Runtime image is currently only available from Docker Hub and you can use it as your base image by specifying ``FROM /baseruntime/baseruntime``.
+The Base Runtime image is currently only available from Docker Hub and you can
+use it as your base image by specifying ``FROM /baseruntime/baseruntime``.
 
-You also need to write a repo file for your module and add it to your container, so you can install the module in it.
-See the example of the repo file in `<https://github.com/container-images/perl/tree/master/repos>`__. 
-The following snippet then shows how you copy the repo and install the files from it in your container:
+You also need to write a repo file for your module and add it to your
+container, so you can install the module in it. See the example of the repo
+file in `<https://github.com/container-images/perl/tree/master/repos>`__. The
+following snippet then shows how you copy the repo and install the files from
+it in your container:
 
 ::
 
@@ -52,5 +58,5 @@ The following snippet then shows how you copy the repo and install the files fro
 Building the image
 -------------------
 
-Finally, when you have your repository and Dockerfile ready, use the ``docker build --tag=`` command to
-build the container image.
+Finally, when you have your repository and Dockerfile ready, use the ``docker
+build --tag=`` command to build the container image.

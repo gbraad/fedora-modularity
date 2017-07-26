@@ -1,7 +1,9 @@
 Building modules locally
 ============================
 
-To build a modulemd, you need to have the `Module Build Service <https://pagure.io/fm-orchestrator>`__ installed on your system.
+To build a modulemd, you need to have the
+`Module Build Service <https://pagure.io/fm-orchestrator>`__
+installed on your system.
 
 On **Fedora rawhide** and **Fedora 26**, install it by:
 
@@ -9,7 +11,8 @@ On **Fedora rawhide** and **Fedora 26**, install it by:
 
     $ sudo dnf install module-build-service
 
-On **Fedora 25**, install the latest version from `https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
+On **Fedora 25**, install the latest version from
+`https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
 
 ::
 

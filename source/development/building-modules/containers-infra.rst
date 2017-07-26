@@ -8,7 +8,8 @@ There are two ways to build a Docker container image in Fedora
 infrastructure:
 
 #. **In production environment** -- the process starts by initiating a
-   review request, as specified in `Container:Review_Process <https://fedoraproject.org/wiki/Container:Review_Process>`__.
+   review request, as specified in `Container:Review_Process
+   <https://fedoraproject.org/wiki/Container:Review_Process>`__.
 #. **In staging environment** -- this is where we can bypass the review
    process and iterate more quickly; In order to use staging
    environment, we should request creation of dist-git repo and pkgdb
@@ -81,7 +82,8 @@ of available images:
 
 ::
 
-    $ curl -s https://registry.fedoraproject.org/v2/_catalog | python -m json.tool
+    $ curl -s https://registry.fedoraproject.org/v2/_catalog | \
+        python -m json.tool
     {
         "repositories": [
             "cockpit",

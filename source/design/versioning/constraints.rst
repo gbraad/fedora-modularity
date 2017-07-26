@@ -19,8 +19,8 @@ This is something that is surprisingly common.
 Examples might be when we want to include a library to support our own 
 package/application, but do not want to give it full support for end-users; we
 might include the library itself, but not include the components 
-that provide the ability to develop against it (the include files, static libraries etc. that
-typically land in a -devel binary rpm). 
+that provide the ability to develop against it (the include files, static
+libraries etc. that typically land in a -devel binary rpm). 
 
 Can we do this naturally in a modular build chain? Clearly it breaks any
 assumption that a module can be both compiled and composed in complete

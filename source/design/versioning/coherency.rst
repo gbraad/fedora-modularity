@@ -67,5 +67,5 @@ ability to drive a common branching structure across a set of modules
 when that is needed for product release requirements. First-class
 support for such a **consolidated release** is absolutely necessary; to
 devolve the distribution into an unmanaged, completely-uncoordinated set
-of independent modules is likely unsustainable for both engineers, maintainers, and
-users alike.
+of independent modules is likely unsustainable for both engineers,
+maintainers, and users alike.

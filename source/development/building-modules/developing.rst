@@ -1,7 +1,11 @@
 Defining modules in modulemd
 ============================
 
-To have your module build, you need to start with writing a `modulemd <https://pagure.io/modulemd>`__ file which is a definition of your module including the components, API, and all the information necessary to build your module like specifying the build root and a build order for the packages. Let’s have a look at an example Vim module:
+To have your module build, you need to start with writing a `modulemd
+<https://pagure.io/modulemd>`__ file which is a definition of your module
+including the components, API, and all the information necessary to build your
+module like specifying the build root and a build order for the packages.
+Let’s have a look at an example Vim module:
 
 ::
 
@@ -52,15 +56,17 @@ To have your module build, you need to start with writing a `modulemd <https://p
                     rationale: build dependency
                     ref: f25
 
-Notice that there is no information about the name or version of the module. That’s because the build system takes this information from the git repository, from which the module is build:
+Notice that there is no information about the name or version of the module.
+That’s because the build system takes this information from the git
+repository, from which the module is build:
 
 * Git repository name == module name
 * Git repository branch == module stream
 * Commit timestamp == module version
 
 All dependencies of vim need to be listed under components/rpms, except
-those that are already included in `Base
-Runtime <https://raw.githubusercontent.com/asamalik/fake-base-runtime-module-image/master/packages/gen-core-binary-pkgs.txt>`__.
+those that are already included in `Base Runtime
+<https://raw.githubusercontent.com/asamalik/fake-base-runtime-module-image/master/packages/gen-core-binary-pkgs.txt>`__.
 Here's how you can get the list of vim dependencies that are not in Base
 Runtime:
 

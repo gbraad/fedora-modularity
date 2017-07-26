@@ -16,7 +16,8 @@ On **Fedora rawhide** and **Fedora 26**, just install it by:
 
     $ sudo dnf install module-build-service
 
-On **Fedora 25**, just install the latest version `https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
+On **Fedora 25**, just install the latest version
+`https://koji.fedoraproject.org/koji/packageinfo?packageID=23564`:
 
 ::
 
@@ -28,4 +29,5 @@ To build your modulemd, run a command:
 
     $ mbs-build submit -w
 
-The command will submit build into infrastructure and watch the task, so you are able to track results.
+The command will submit build into infrastructure and watch the task, so you
+are able to track results.

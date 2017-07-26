@@ -1,7 +1,9 @@
 Boltron Content
 ===============
 
-The following is a list of modules that we have completed. Many of the `modules are also available as containers <https://hub.docker.com/u/modularitycontainers/>`__ on dockerhub.
+The following is a list of modules that we have completed. Many of the
+`modules are also available as containers
+<https://hub.docker.com/u/modularitycontainers/>`__ on dockerhub.
 
 - `base-runtime-f26`
 - `container-runtime-f26`
@@ -29,5 +31,7 @@ The following is a list of modules that we have completed. Many of the `modules 
 - `systemtools-f26`
 - `varnish-f26`
 
-For more information about individual modules - both completed and in progress - see the `Fedora Modularity: Modules GitHub space <https://github.com/modularity-modules>`__.
+For more information about individual modules - both completed and in
+progress - see the `Fedora Modularity: Modules GitHub space
+<https://github.com/modularity-modules>`__.
 
