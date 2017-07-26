@@ -12,7 +12,7 @@ places:
    tools share a common understanding of the various product branches
    (fXX etc.) and work flows naturally between them.
 -  Users consume products knowing which branch they are on; they
-   have the option to choose between branches (F25 after F26 has 
+   have the option to choose between branches (F25 after F26 has
    been released), and they report bugs and
    review CVEs corresponding to those branches
 
@@ -55,7 +55,7 @@ independently from a single master release cadence. But do we really
 want all modules to be released without any synchronisation or common
 branching at all?
 
-History suggests we do not. 
+History suggests we do not.
 
 In the future we likely have many completely-decoupled modules for
 additional content outside the base Fedora runtime platform. But we may

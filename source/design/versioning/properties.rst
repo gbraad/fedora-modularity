@@ -68,7 +68,7 @@ automatically update it to 2.4. Any dependencies brought in by either
 must also prevent such interference.
 
 And yet if a certain package *does* support parallel installation of
-different version branches at the same time 
+different version branches at the same time
 (eg. software collection-based packages), then the
 separate installed versions at any time must each be updatable by their
 own specific update stream.

@@ -226,7 +226,7 @@ But ultimately, Fedora still wants to be able to produce a planned
 release spanning many modules, and users still want to have controlled,
 predictable releases, rather than having modules dribble into a release
 in drips. We still have major release events such as Fedora major/minor
-updates. 
+updates.
 
 So decomposing the release into loosely-coupled compose steps is all
 well enough, but we need more than just chain rebuilds to bring it all

@@ -21,8 +21,8 @@ the module plus all its implied dependencies as a single unit, to
 distinguish that from the individual modules within the stack; the stack
 content and metadata may have exactly the same format as module metadata
 (the metadata is the same colour here for a reason!) But it’s still
-important (at least internally, probably not for end users) to make the 
-distinction between a single module, and a module plus all the external 
+important (at least internally, probably not for end users) to make the
+distinction between a single module, and a module plus all the external
 dependencies it relies on.
 
 Importantly, we can take two modules with different lifecycles and

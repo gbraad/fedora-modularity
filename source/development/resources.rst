@@ -10,7 +10,7 @@ Git Repositories
 Specifications
 ~~~~~~~~~~~~~~
 
-`Modulemd <https://pagure.io/modulemd>`__ - 
+`Modulemd <https://pagure.io/modulemd>`__ -
 This repository contains the definition of metadata format (Modulemd)
 used to describe every module. It also contains Python library used to
 manipulate files in this format.

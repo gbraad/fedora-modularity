@@ -16,7 +16,7 @@ We use these terms:
    unit. May depend on other modules.
 -  **Stack.** A complete tree of modules. A stack can be thought of as
    a top-level module, with the understanding that we’re implicitly
-   including all of that module’s dependencies in the stack. HOwever, when 
+   including all of that module’s dependencies in the stack. HOwever, when
    the stack is delivered to the end-user it appears as "just another module."
 -  **Artifact** or **image**. An actual set of bits built out of
    modules, in a format intended to be distributed or deployed in some
@@ -34,7 +34,7 @@ We will also distinguish between:
 -  A **Compose** of a module: a process which assembles pre-compiled
    packages into an organised module, but which includes no compilation
    step itself. Sometimes we also use the term **Coallesce** for this scenario
-   to distinguish between the existing, Fedora term "Compose" which is very 
+   to distinguish between the existing, Fedora term "Compose" which is very
    similar but not quite the same.
 
 .. rubric:: TOC

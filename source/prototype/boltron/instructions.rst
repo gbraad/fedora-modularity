@@ -39,7 +39,7 @@ Installing modules
 ..................
 
 Modules are identified by name-stream-version. Each module might have one or
-more install profiles - pre-defined sets of packages to be installed. 
+more install profiles - pre-defined sets of packages to be installed.
 
 Modules can be installed by one of the following commands.
 

@@ -17,7 +17,7 @@ Yet we need to control this complexity: the engineering involved has to
 be sustainable, and the combinations we offer to the user need to be
 manageable. This is especially true as different tools represent
 branches in different ways (eg. bugzilla represents branches as the
-“version” field for a product, and also has version-specific flags; 
+“version” field for a product, and also has version-specific flags;
 koji has koji tags which act as branches, etc.)
 
 This leads to some complex constraints, which we will explore in this

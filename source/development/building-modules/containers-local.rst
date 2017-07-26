@@ -3,7 +3,7 @@ Building containers locally
 
 When you have your module built, let's put it in a container, so we can
 use it. As an example, we will use the `perl image
-<https://github.com/container-images/perl/blob/master/Dockerfile>`__. 
+<https://github.com/container-images/perl/blob/master/Dockerfile>`__.
 
 Module RPM repository
 ---------------------

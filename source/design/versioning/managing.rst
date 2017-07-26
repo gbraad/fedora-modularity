@@ -82,9 +82,9 @@ Converging branches
 ~~~~~~~~~~~~~~~~~~~
 
 Just as important as forking a new branch is converging existing
-branches. In an f-stream model, a new feature scheduled for the next release 
-is made available in a prior release. The f-stream is the early-access branch; 
-the intent is that when the next release occurs, it introduces that 
+branches. In an f-stream model, a new feature scheduled for the next release
+is made available in a prior release. The f-stream is the early-access branch;
+the intent is that when the next release occurs, it introduces that
 feature into the mainline stream, and the f-stream is no longer
 needed: any component depending on that feature moves back off the
 f-stream branch and onto the mainline.

@@ -16,7 +16,7 @@ straight, we need to distinguish between:
     A version branch **may** correspond to a new **major version** of
     the module, but there may be exceptions: for example, when we add
     specific features as a side-branch of an existing major version. The
-    new branch may differ by SLA (eg. a faster moving Python) or by 
+    new branch may differ by SLA (eg. a faster moving Python) or by
     feature (eg. an “f-stream” branch giving early access to a
     specific new feature planned to be released in a subsequent update).
 
